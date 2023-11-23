@@ -2047,6 +2047,7 @@ GameObject:
   - component: {fileID: 1168818797}
   - component: {fileID: 1168818798}
   - component: {fileID: 1168818799}
+  - component: {fileID: 1168818800}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -2204,6 +2205,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: ade3ded6-501d-403a-beaa-ee87fbb2415d
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1168818800}
+        m_TargetAssemblyTypeName: HeroSelect, Assembly-CSharp
+        m_MethodName: OnDebugHeroSelect
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+    m_ActionId: d16b897e-84a1-4177-a56a-7772f8996b9e
+    m_ActionName: Player/DebugHeroSelect[/Keyboard/k]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -2249,6 +2266,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+--- !u!114 &1168818800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168818794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175c6f8ba97679145bc8d2cb6210878e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: {fileID: 7108339969198208228, guid: 168ef55a622f4934f854c3e2b822aa0a, type: 3}
+  heroine: {fileID: 7108339969198208228, guid: 8854bc50a9d672e4f87b2717d6daf17a, type: 3}
+  heroineBlue: {fileID: 7108339969198208228, guid: fcd5cb704596ff34987c051e63606bda, type: 3}
+  heroineRed: {fileID: 7108339969198208228, guid: 0fe3072938e133e4fb1238e9a6a51025, type: 3}
+  link: {fileID: 7108339969198208228, guid: cf815a1af977f914a9d16ce9a5dfd2a5, type: 3}
+  zelda: {fileID: 7108339969198208228, guid: 6185934841414d14b848828d36aed713, type: 3}
 --- !u!1 &1207970403
 GameObject:
   m_ObjectHideFlags: 0
@@ -37519,6 +37554,8 @@ GameObject:
   - component: {fileID: 2135148069}
   - component: {fileID: 2135148071}
   - component: {fileID: 2135148070}
+  - component: {fileID: 2135148073}
+  - component: {fileID: 2135148072}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -37603,7 +37640,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1674764973, guid: c906d96faaac44641b635ed4980e12bb, type: 3}
+  m_Sprite: {fileID: 1674764973, guid: b1635964533b065449bdbe53feae8c45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -37614,6 +37651,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2135148072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135148068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CategoryHash: 0.0030362501
+  m_labelHash: 3.8315493e-34
+  m_SpriteKey: 0
+  m_SpriteHash: 658717261
+--- !u!114 &2135148073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135148068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 168ef55a622f4934f854c3e2b822aa0a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
