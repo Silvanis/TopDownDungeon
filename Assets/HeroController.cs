@@ -87,22 +87,33 @@ public class HeroController : MonoBehaviour
             }
         }
 
-        if (currentMoveDirection != previousMoveDirection)
+        //when changing from vertical to horizontal direction (or vice versa), we should adjust the position to the closest half tile for QOL
+        if (currentMoveDirection != previousMoveDirection) 
         {
+            Vector2 adjustedPosition = rigidbody2d.position;
             ResetAnimationTrigger();
             switch (currentMoveDirection)
             {
                 case MoveDirection.MOVE_UP:
                     heroAnimationController.SetTrigger("MoveUp");
+                    adjustedPosition.x = Mathf.Round(rigidbody2d.position.x * 2) / 2;
+                    rigidbody2d.position = adjustedPosition;
                     break;
                 case MoveDirection.MOVE_DOWN:
                     heroAnimationController.SetTrigger("MoveDown");
+                    adjustedPosition.x = Mathf.Round(rigidbody2d.position.x * 2) / 2;
+                    rigidbody2d.position = adjustedPosition;
+
                     break;
                 case MoveDirection.MOVE_LEFT:
                     heroAnimationController.SetTrigger("MoveLeft");
+                    adjustedPosition.y = Mathf.Round(rigidbody2d.position.y * 2) / 2;
+                    rigidbody2d.position = adjustedPosition;
                     break;
                 case MoveDirection.MOVE_RIGHT:
                     heroAnimationController.SetTrigger("MoveRight");
+                    adjustedPosition.y = Mathf.Round(rigidbody2d.position.y * 2) / 2;
+                    rigidbody2d.position = adjustedPosition;
                     break;
                 case MoveDirection.MOVE_IDLE:
                     heroAnimationController.SetTrigger("Idle");
@@ -178,11 +189,27 @@ public class HeroController : MonoBehaviour
                 break;
             case MoveDirection.MOVE_LEFT:
                 targetPosition.x -= 3.1f;
-                targetPosition.y = (int)targetPosition.y + 0.5f;
+                targetPosition.y = Mathf.Round(targetPosition.y); //left and right doorways are at x.5 so need to round, determine if that's even, then add or subtract .5
+                if ((int)targetPosition.y % 2 == 0)
+                {
+                    targetPosition.y += 0.5f;
+                }
+                else
+                {
+                    targetPosition.y -= 0.5f;
+                }
                 break;
             case MoveDirection.MOVE_RIGHT:
                 targetPosition.x += 3.1f;
-                targetPosition.y = (int)targetPosition.y + 0.5f;
+                targetPosition.y = Mathf.Round(targetPosition.y);
+                if ((int)targetPosition.y % 2 == 0)
+                {
+                    targetPosition.y += 0.5f;
+                }
+                else
+                {
+                    targetPosition.y -= 0.5f;
+                }
                 break;
             default:
                 targetPosition = new Vector2(0.0f, 0.0f);
