@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class HeroController : MonoBehaviour
 {
@@ -15,13 +17,14 @@ public class HeroController : MonoBehaviour
     private MoveDirection previousMoveDirection;
     private Animator heroAnimationController;
     private bool isPaused = false;
-    
+    private PlayerInput m_playerInput;
+
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
         heroAnimationController = gameObject.GetComponentInChildren<Animator>();
-        
+        m_playerInput = GetComponent<PlayerInput>();
     }
 
     private void Awake()
@@ -55,37 +58,8 @@ public class HeroController : MonoBehaviour
         }
 
         currentMoveVector = context.ReadValue<Vector2>();
-        
-        if (Mathf.Abs(currentMoveVector.x) < 0.1f && Mathf.Abs(currentMoveVector.y) < 0.1f) //not moving
-        {
-            currentMoveDirection = MoveDirection.MOVE_IDLE;
-        }
-        else if (Mathf.Abs(currentMoveVector.x) > Mathf.Abs(currentMoveVector.y)) //moving left or right
-        {
-            currentMoveVector.y = 0.0f;
-            currentMoveVector = currentMoveVector.normalized;
-            if (currentMoveVector.x > 0.0f)
-            {
-                currentMoveDirection = MoveDirection.MOVE_RIGHT;
-            }
-            else
-            {
-                currentMoveDirection = MoveDirection.MOVE_LEFT;
-            }
-        }
-        else //moving up or down
-        {
-            currentMoveVector.x = 0.0f;
-            currentMoveVector = currentMoveVector.normalized;
-            if (currentMoveVector.y > 0.0f)
-            {
-                currentMoveDirection = MoveDirection.MOVE_UP;
-            }
-            else
-            {
-                currentMoveDirection = MoveDirection.MOVE_DOWN;
-            }
-        }
+
+        AnalyzeMovementVector();
 
         //when changing from vertical to horizontal direction (or vice versa), we should adjust the position to the closest half tile for QOL
         if (currentMoveDirection != previousMoveDirection) 
@@ -171,12 +145,14 @@ public class HeroController : MonoBehaviour
                 break;
         }
         _ = StartCoroutine(MoveBetweenRooms(direction));
+
     }
     IEnumerator MoveBetweenRooms(MoveDirection direction)
     {
         float timeElapsed = 0f;
         Vector2 startPosition = transform.position;
         Vector2 targetPosition = startPosition;
+        
         switch (direction)
         {
             case MoveDirection.MOVE_UP:
@@ -225,9 +201,20 @@ public class HeroController : MonoBehaviour
         }
         transform.position = targetPosition;
         gameObject.GetComponent<Collider2D>().enabled = true;
-        ResetAnimationTrigger();
+
+
+        currentMoveVector = m_playerInput.actions["Move"].ReadValue<Vector2>();
+        AnalyzeMovementVector();
+
+
+        if (currentMoveDirection != previousMoveDirection)
+        {
+            ResetAnimationTrigger();
+        }
+        
         //heroAnimationController.SetTrigger("Idle");
         heroAnimationController.updateMode = AnimatorUpdateMode.Normal;
+
         
     }
 
@@ -256,6 +243,39 @@ public class HeroController : MonoBehaviour
         }
     }
 
+    void AnalyzeMovementVector()
+    {
+        if (Mathf.Abs(currentMoveVector.x) < 0.1f && Mathf.Abs(currentMoveVector.y) < 0.1f) //not moving
+        {
+            currentMoveDirection = MoveDirection.MOVE_IDLE;
+        }
+        else if (Mathf.Abs(currentMoveVector.x) > Mathf.Abs(currentMoveVector.y)) //moving left or right
+        {
+            currentMoveVector.y = 0.0f;
+            currentMoveVector = currentMoveVector.normalized;
+            if (currentMoveVector.x > 0.0f)
+            {
+                currentMoveDirection = MoveDirection.MOVE_RIGHT;
+            }
+            else
+            {
+                currentMoveDirection = MoveDirection.MOVE_LEFT;
+            }
+        }
+        else //moving up or down
+        {
+            currentMoveVector.x = 0.0f;
+            currentMoveVector = currentMoveVector.normalized;
+            if (currentMoveVector.y > 0.0f)
+            {
+                currentMoveDirection = MoveDirection.MOVE_UP;
+            }
+            else
+            {
+                currentMoveDirection = MoveDirection.MOVE_DOWN;
+            }
+        }
+    }
 }
 
 public enum MoveDirection
