@@ -22,12 +22,15 @@ public class SkellyEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Entering Start");
         animator = gameObject.GetComponentInChildren<Animator>();
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
     }
 
     private void Awake()
     {
+        animator = gameObject.GetComponentInChildren<Animator>();
+        rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
         ChangePosition();
     }
     // Update is called once per frame
@@ -88,7 +91,8 @@ public class SkellyEnemy : MonoBehaviour
 
                 if (hit.collider == null)
                 {
-                    validDirection = true; break;
+                    validDirection = true; 
+                    break;
                 }
                 else
                 {
@@ -99,7 +103,30 @@ public class SkellyEnemy : MonoBehaviour
         }
 
         currentDirection = newDirection;
+        ChangeFacing();
         Debug.Log(currentDirection.ToString());
+    }
+
+    private void ChangeFacing()
+    {
+        switch (currentDirection)
+        {
+            case MoveDirection.MOVE_IDLE:
+                animator.SetTrigger("Idle");
+                break;
+            case MoveDirection.MOVE_UP:
+                animator.SetTrigger("MoveUp");
+                break;
+            case MoveDirection.MOVE_DOWN:
+                animator.SetTrigger("MoveDown");
+                break;
+            case MoveDirection.MOVE_LEFT:
+                animator.SetTrigger("MoveLeft");
+                break;
+            case MoveDirection.MOVE_RIGHT:
+                animator.SetTrigger("MoveRight");
+                break;
+        }
     }
 
     private MoveDirection RollDirection()
