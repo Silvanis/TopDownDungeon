@@ -62,7 +62,7 @@ public class HeroController : MonoBehaviour
         {
             if (remainingKnockbackFrames > 0)
             {
-                wfloat movementDistance = (float)knockbackStrength / (float)knockbackFrames;
+                float movementDistance = (float)knockbackStrength / (float)knockbackFrames;
                 rigidbody2d.MovePosition(rigidbody2d.position + (knockbackDirection * movementDistance));
                 remainingKnockbackFrames--;
             }
