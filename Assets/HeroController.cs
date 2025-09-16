@@ -11,13 +11,20 @@ public class HeroController : MonoBehaviour
     private float moveSpeed = 10.0f;
     [SerializeField]
     private float roomMoveTime = 1.0f;
+    [SerializeField]
+    private int knockbackFrames = 3;
+    private int remainingKnockbackFrames = 0;
     private Rigidbody2D rigidbody2d;
     private Vector2 currentMoveVector = new Vector2(0.0f, 0.0f);
     public MoveDirection currentMoveDirection { get; private set; }
     private MoveDirection previousMoveDirection;
+    private Vector2 knockbackDirection = new Vector2(0.0f, 0.0f);
+    private KnockbackStrength knockbackStrength;
     private Animator heroAnimationController;
     private bool isPaused = false;
+    private bool isInvincible = false;
     private PlayerInput m_playerInput;
+    private CHARACTER_STATE currentState = CHARACTER_STATE.NORMAL;
 
     // Start is called before the first frame update
     void Start()
@@ -47,12 +54,30 @@ public class HeroController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidbody2d.MovePosition(rigidbody2d.position + (currentMoveVector * moveSpeed * Time.fixedDeltaTime));
+        if (currentState == CHARACTER_STATE.NORMAL)
+        {
+            rigidbody2d.MovePosition(rigidbody2d.position + (currentMoveVector * moveSpeed * Time.fixedDeltaTime));
+        }
+        else if (currentState == CHARACTER_STATE.KNOCKBACK)
+        {
+            if (remainingKnockbackFrames > 0)
+            {
+                wfloat movementDistance = (float)knockbackStrength / (float)knockbackFrames;
+                rigidbody2d.MovePosition(rigidbody2d.position + (knockbackDirection * movementDistance));
+                remainingKnockbackFrames--;
+            }
+            else
+            {
+                currentState = CHARACTER_STATE.NORMAL;
+            }
+
+        }
+        
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (Time.timeScale <= 0.01f) //game paused, no character input for you!
+        if (Time.timeScale <= 0.01f ) //no character input for you!
         {
             return;
         }
@@ -276,6 +301,44 @@ public class HeroController : MonoBehaviour
             }
         }
     }
+
+    public void GetHit(int incomingDamage, KnockbackStrength knockbackDistance)
+    {
+        currentState = CHARACTER_STATE.KNOCKBACK;
+        knockbackStrength = knockbackDistance;
+        remainingKnockbackFrames = knockbackFrames;
+        switch(currentMoveDirection)
+        {
+            case MoveDirection.MOVE_IDLE:
+                break;
+            case MoveDirection.MOVE_RIGHT:
+                knockbackDirection = Vector2.left;
+                break;
+            case MoveDirection.MOVE_LEFT:
+                knockbackDirection = Vector2.right;
+                break;
+            case MoveDirection.MOVE_UP:
+                knockbackDirection = Vector2.down;
+                break;
+            case MoveDirection.MOVE_DOWN:
+                knockbackDirection = Vector2.up;
+                break;
+            default:
+                knockbackDirection = Vector2.left;
+                break;
+        }
+        isInvincible = true;
+        
+
+    }
+
+    private enum CHARACTER_STATE
+    {
+        NORMAL,
+        KNOCKBACK,
+        DYING,
+        DEAD
+    }
 }
 
 public enum MoveDirection
@@ -285,4 +348,10 @@ public enum MoveDirection
     MOVE_LEFT,
     MOVE_RIGHT,
     MOVE_IDLE
+}
+
+public enum KnockbackStrength
+{
+    WEAK = 1,
+    STRONG = 3
 }

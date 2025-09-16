@@ -12,6 +12,10 @@ public class SkellyEnemy : MonoBehaviour
     private float howManyTilesToTravel = 1.0f;
     [SerializeField]
     private float idleTime = 2.0f;
+    [SerializeField]
+    private KnockbackStrength knockback;
+    [SerializeField]
+    private int damageDealt = 1;
     private Animator animator;
     private Rigidbody2D rigidbody2d;
     private Vector2 currentMoveVector = Vector2.zero;
@@ -51,6 +55,15 @@ public class SkellyEnemy : MonoBehaviour
             ChangePosition();
         }
         rigidbody2d.MovePosition(rigidbody2d.position + (currentMoveVector * distanceIncrement));
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player") 
+        {
+            Debug.Log("<color=orange>Die pesky hero!</color>");
+            collision.gameObject.GetComponent<HeroController>().GetHit(damageDealt, knockback);
+        }
     }
 
     private void ChangePosition()
@@ -104,7 +117,6 @@ public class SkellyEnemy : MonoBehaviour
 
         currentDirection = newDirection;
         ChangeFacing();
-        Debug.Log(currentDirection.ToString());
     }
 
     private void ChangeFacing()
