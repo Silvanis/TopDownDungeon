@@ -346,7 +346,7 @@ public class HeroController : MonoBehaviour
             remainingKnockbackFrames = knockbackFrames;
             knockbackDirection = directionOfKnockback;
             isInvincible = true;
-            gameObject.GetComponentInChildren<HeroInvincibilityEffect>().StartRunning(invincibilityDuration);
+            gameObject.GetComponentInChildren<HeroInvincibilityEffect>().StartRunning();
         }
             
         

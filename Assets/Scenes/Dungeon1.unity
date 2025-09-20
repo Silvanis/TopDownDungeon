@@ -39491,7 +39491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   invincibilityMaterial: {fileID: -876546973899608171, guid: 5ee7aabb56c577140a351adfff2b337a, type: 3}
-  invincibilityDuration: 0
+  invincibilityDuration: 2
   invincibilityFrameTime: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

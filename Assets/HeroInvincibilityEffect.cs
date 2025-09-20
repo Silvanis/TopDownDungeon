@@ -77,9 +77,8 @@ public class HeroInvincibilityEffect : MonoBehaviour
         }
     }
 
-    public void StartRunning (float duration)
+    public void StartRunning ()
     {
-        invincibilityDuration = duration;
         invincibilityTimeAccumulator = 0.0f;
         invincibilityFrameTimeAccumulator = 0.0f;
         isRunning = true;
