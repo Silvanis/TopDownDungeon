@@ -26,7 +26,7 @@ public class SkellyEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Entering Start");
+        
         animator = gameObject.GetComponentInChildren<Animator>();
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
     }
@@ -61,8 +61,12 @@ public class SkellyEnemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player") 
         {
-            Debug.Log("<color=orange>Die pesky hero!</color>");
-            collision.gameObject.GetComponent<HeroController>().GetHit(damageDealt, knockback);
+
+            Vector2 contactDirection = new Vector2(); 
+            contactDirection = collision.GetContact(0).normal;
+            contactDirection = -contactDirection; //need to reverse the direction of the normal for pushback
+            Debug.Log("<color=orange>Die pesky hero! Push in: </color>" + contactDirection);
+            collision.gameObject.GetComponent<HeroController>().GetHit(damageDealt, knockback, ref contactDirection, gameObject);
         }
     }
 

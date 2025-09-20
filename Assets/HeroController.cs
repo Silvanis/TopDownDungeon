@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEditor.Timeline.TimelinePlaybackControls;
@@ -13,18 +14,26 @@ public class HeroController : MonoBehaviour
     private float roomMoveTime = 1.0f;
     [SerializeField]
     private int knockbackFrames = 3;
+    [SerializeField]
+    private float invincibilityDuration = 3.0f;
+    private float invincibilityAccumulator = 0.0f;
     private int remainingKnockbackFrames = 0;
     private Rigidbody2D rigidbody2d;
     private Vector2 currentMoveVector = new Vector2(0.0f, 0.0f);
     public MoveDirection currentMoveDirection { get; private set; }
     private MoveDirection previousMoveDirection;
-    private Vector2 knockbackDirection = new Vector2(0.0f, 0.0f);
+    private Vector2 knockbackDirection;
     private KnockbackStrength knockbackStrength;
     private Animator heroAnimationController;
     private bool isPaused = false;
     private bool isInvincible = false;
     private PlayerInput m_playerInput;
     private CHARACTER_STATE currentState = CHARACTER_STATE.NORMAL;
+    private bool isStillTouching = false;
+    private int lastEnemyDamage;
+    private GameObject lastEnemy;
+    private Vector2 lastEnemyKnockbackDirection;
+    private KnockbackStrength lastEnemyKnockbackStrength;
 
     // Start is called before the first frame update
     void Start()
@@ -71,6 +80,24 @@ public class HeroController : MonoBehaviour
                 currentState = CHARACTER_STATE.NORMAL;
             }
 
+        }
+
+        if (isInvincible)
+        {
+            if (invincibilityAccumulator >= invincibilityDuration)
+            {
+                isInvincible = false;
+                invincibilityAccumulator = 0.0f;
+                if (isStillTouching)
+                {
+                    GetHit(lastEnemyDamage, lastEnemyKnockbackStrength, ref lastEnemyKnockbackDirection, lastEnemy);
+                }
+            }
+            else
+            {
+                invincibilityAccumulator += Time.fixedDeltaTime;
+            }
+            
         }
         
     }
@@ -302,34 +329,43 @@ public class HeroController : MonoBehaviour
         }
     }
 
-    public void GetHit(int incomingDamage, KnockbackStrength knockbackDistance)
+    public void GetHit(int incomingDamage, KnockbackStrength knockbackDistance, ref Vector2 directionOfKnockback, GameObject enemyAttacking)
     {
-        currentState = CHARACTER_STATE.KNOCKBACK;
-        knockbackStrength = knockbackDistance;
-        remainingKnockbackFrames = knockbackFrames;
-        switch(currentMoveDirection)
+        if (isInvincible)
         {
-            case MoveDirection.MOVE_IDLE:
-                break;
-            case MoveDirection.MOVE_RIGHT:
-                knockbackDirection = Vector2.left;
-                break;
-            case MoveDirection.MOVE_LEFT:
-                knockbackDirection = Vector2.right;
-                break;
-            case MoveDirection.MOVE_UP:
-                knockbackDirection = Vector2.down;
-                break;
-            case MoveDirection.MOVE_DOWN:
-                knockbackDirection = Vector2.up;
-                break;
-            default:
-                knockbackDirection = Vector2.left;
-                break;
+            lastEnemy = enemyAttacking;
+            lastEnemyDamage = incomingDamage;
+            lastEnemyKnockbackDirection = directionOfKnockback;
+            lastEnemyKnockbackStrength = knockbackDistance;
+            return;
         }
-        isInvincible = true;
+        else
+        {
+            currentState = CHARACTER_STATE.KNOCKBACK;
+            knockbackStrength = knockbackDistance;
+            remainingKnockbackFrames = knockbackFrames;
+            knockbackDirection = directionOfKnockback;
+            isInvincible = true;
+            gameObject.GetComponentInChildren<HeroInvincibilityEffect>().StartRunning(invincibilityDuration);
+        }
+            
         
+    }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject == lastEnemy)
+        {
+            isStillTouching = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject == lastEnemy)
+        {
+            isStillTouching = false;
+        }
     }
 
     private enum CHARACTER_STATE
