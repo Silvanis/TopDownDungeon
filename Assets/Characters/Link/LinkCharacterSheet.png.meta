@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 370563f763b03014282ccd301161f62b
+guid: 3a11a798154f32f4c96b8c84e217ed32
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -93,24 +93,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_Front1
+      name: Green_Walk_Front1
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb6f20b2541134744806d792a8ae67e6
-      internalID: 1674764973
+      spriteID: 9343d17df3b33df42a3368a75e3fab49
+      internalID: 1637296277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front2
+      name: Green_Walk_Front2
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7f00bf3e998ec3469876bf4db203342
-      internalID: -185655649
+      spriteID: f2619d59fc1824f448512b33ae78dc43
+      internalID: -216270670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front3
+      name: Green_Walk_Front3
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef05b7bd51457fd45aa3d0881d597851
-      internalID: -1850516965
+      spriteID: 9f6b4e4f9f947e74a9cc79308d1f0636
+      internalID: -1282631194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front4
+      name: Green_Walk_Front4
       rect:
         serializedVersion: 2
         x: 96
@@ -187,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc601f747b366c845aea165d5026ccf3
-      internalID: -397245688
+      spriteID: 40b9372940b73e74aafd9da15e2a4e8f
+      internalID: 2010331127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Front1
+      name: Green_Attack_Front1
       rect:
         serializedVersion: 2
         x: 128
@@ -208,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 750fc95f14daf5e4e807218b01b97d86
-      internalID: 675051820
+      spriteID: 34c07cae7e9a9424eb93f94f28997091
+      internalID: -1280500700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Front2
+      name: Green_Attack_Front2
       rect:
         serializedVersion: 2
         x: 160
@@ -229,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6fe2af797149db45b8bea9d1f248855
-      internalID: -1712315665
+      spriteID: cf25be6b8766a2746ae4f387e115b06e
+      internalID: 963090820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Front1
+      name: Green_Walk_Front_BigShield1
       rect:
         serializedVersion: 2
         x: 192
@@ -250,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db5ac6e0d4c7dd145b36f72911f6f2bf
-      internalID: -1163423828
+      spriteID: ef66e3a85aab38a4db03ecda6a7e077b
+      internalID: -1710994380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Front2
+      name: Green_Walk_Front_BigShield2
       rect:
         serializedVersion: 2
         x: 224
@@ -271,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9108288e5467ce44ad1ddae3c52c42d
-      internalID: 1871636757
+      spriteID: aadea9f4e0afce944bc9503ecb8881ad
+      internalID: 297972948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Front3
+      name: Green_Walk_Front_BigShield3
       rect:
         serializedVersion: 2
         x: 256
@@ -292,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2228b455fbac3c48908da37e9290ef9
-      internalID: -81019049
+      spriteID: d5cbdb2cd05b86f45b680d05d5222c09
+      internalID: 1744372480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Front4
+      name: Green_Walk_Front_BigShield4
       rect:
         serializedVersion: 2
         x: 288
@@ -313,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c053366e0cb805f44a48333ec6b4a79b
-      internalID: -1954554620
+      spriteID: 8744d987015c7644b9f5df8486e2dda9
+      internalID: -2127600961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Front1
+      name: Green_Attack_Front_BigShield1
       rect:
         serializedVersion: 2
         x: 320
@@ -334,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47c5d7083f765984ebe90ea458478a85
-      internalID: -474499820
+      spriteID: 999b725e39312cb49a9100d48efd2da7
+      internalID: -1865541021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Front2
+      name: Green_Attack_Front_BigShield2
       rect:
         serializedVersion: 2
         x: 352
@@ -355,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e32a12f8008792047b9347185033d803
-      internalID: -471662592
+      spriteID: 976bd74c61d275747a2af03e2a305b9f
+      internalID: -811857198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back1
+      name: Green_Walk_Back1
       rect:
         serializedVersion: 2
         x: 0
@@ -376,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdf115b8a75be3541ac47dfc1d204b70
-      internalID: -1239701935
+      spriteID: 416478098744a0747ac17264968a4afa
+      internalID: -849884922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back2
+      name: Green_Walk_Back2
       rect:
         serializedVersion: 2
         x: 32
@@ -397,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d9f19c3e0c589f4e9a193d8f0c31fb1
-      internalID: 1889704781
+      spriteID: 68a41967443fe2149bdabe70532ee524
+      internalID: -720561974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back3
+      name: Green_Walk_Back3
       rect:
         serializedVersion: 2
         x: 64
@@ -418,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ec2e71870511d74a8f153f0c2d2cb97
-      internalID: -1846676837
+      spriteID: dc11d44f3019d1843b400f5c60361ab2
+      internalID: 454833563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back4
+      name: Green_Walk_Back4
       rect:
         serializedVersion: 2
         x: 96
@@ -439,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfb4b430602fc594b859049de1b57ac9
-      internalID: -206315290
+      spriteID: df9fd8711735649499e592c66b0c684c
+      internalID: 2042221163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Back1
+      name: Green_Attack_Back1
       rect:
         serializedVersion: 2
         x: 128
@@ -460,14 +447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0c03c5cb6e712e4bbafa553feecd3da
-      internalID: -295631627
+      spriteID: d0a32e557c6aa1343b12a31068a3bde7
+      internalID: -482749081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Back2
+      name: Green_Attack_Back2
       rect:
         serializedVersion: 2
         x: 160
@@ -481,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bf086c83da6d534a9352046997e0969
-      internalID: 843371341
+      spriteID: 3ab5d4de560701f42bacef7b362724d4
+      internalID: -1157169013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Back1
+      name: Green_Walk_Back_BigShield1
       rect:
         serializedVersion: 2
         x: 192
@@ -502,14 +489,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0aa36abd5402b44cbac758113016de7
-      internalID: 1170926598
+      spriteID: a7e2b1f879907bd49981520ead7bc1f9
+      internalID: 1023498434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Back2
+      name: Green_Walk_Back_BigShield2
       rect:
         serializedVersion: 2
         x: 224
@@ -523,14 +510,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1690608a1ff02624a96dbac63a6351b0
-      internalID: -1019331747
+      spriteID: 85ec8ad6eab77b14188e5cffc2da62d0
+      internalID: -1708455297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Back3
+      name: Green_Walk_Back_BigShield3
       rect:
         serializedVersion: 2
         x: 256
@@ -544,14 +531,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2789a45cb779dc4fb3601de6e14519d
-      internalID: 1735109461
+      spriteID: 09d030998130ee843be1d35c6d41410e
+      internalID: 1593253129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Back4
+      name: Green_Walk_Back_BigShield4
       rect:
         serializedVersion: 2
         x: 288
@@ -565,14 +552,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88e418c0db3050549bbb98bcd0a13d43
-      internalID: -1022628795
+      spriteID: 9e6f2cbffb465474ca3a840d6a72ffbc
+      internalID: -1509415600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Back1
+      name: Green_Attack_Back_BigShield1
       rect:
         serializedVersion: 2
         x: 320
@@ -586,14 +573,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fa286ce0b56ff148a2e489fd3e7cd14
-      internalID: -813190789
+      spriteID: 5d896ffbdf3e3504699b8dd450265867
+      internalID: -1635298009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Back2
+      name: Green_Attack_Back_BigShield2
       rect:
         serializedVersion: 2
         x: 352
@@ -607,14 +594,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ccdab89696dd024ea1522149150dc96
-      internalID: 978180701
+      spriteID: 6d329a61e2bca2643aeb7cc91c33c0db
+      internalID: 1167543606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Right1
+      name: Green_Walk_Right1
       rect:
         serializedVersion: 2
         x: 0
@@ -628,14 +615,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab418ba80120b0340b39bf1d744c7c06
-      internalID: 87053445
+      spriteID: 7579c2f991013f243bb8c06ebdaf75ef
+      internalID: 1560748030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Right2
+      name: Green_Walk_Right2
       rect:
         serializedVersion: 2
         x: 32
@@ -649,14 +636,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07a89a49fb6a2f84395bbba7d9dbb537
-      internalID: -1489790451
+      spriteID: 5da23b33e5efa534e8e5d704064e8e62
+      internalID: 1054340233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Right3
+      name: Green_Walk_Right3
       rect:
         serializedVersion: 2
         x: 64
@@ -670,14 +657,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d55661a8b171d43811528bc7066050
-      internalID: -1507915079
+      spriteID: 77e1fbaf6d9248845a483cc1f9b1a6f7
+      internalID: -1158922381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Right4
+      name: Green_Walk_Right4
       rect:
         serializedVersion: 2
         x: 96
@@ -691,14 +678,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6a32a466e578bb47a86523ab7a19448
-      internalID: -1262201590
+      spriteID: 7aa287c163413174ab9f96668039e6da
+      internalID: 1824085951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Right1
+      name: Green_Attack_Right1
       rect:
         serializedVersion: 2
         x: 128
@@ -712,14 +699,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50206f64cf806a147a49a96d0a8a15c0
-      internalID: 907129734
+      spriteID: 3443af278a1fa424abcadc3f874fbd8c
+      internalID: -982438883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Right2
+      name: Green_Attack_Right2
       rect:
         serializedVersion: 2
         x: 160
@@ -733,14 +720,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ea5b4dde1609b048bb0c30d14540f7a
-      internalID: -1710278349
+      spriteID: 578c9a2d577cc54428a5d7b7fa977aa7
+      internalID: 1249725841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Right1
+      name: Green_Walk_Right_BigShield1
       rect:
         serializedVersion: 2
         x: 192
@@ -754,14 +741,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adb0e55baa1b7c541bdbd21730e5dab0
-      internalID: -1670092970
+      spriteID: c178cfb6ea841864ea879563c74af81c
+      internalID: -557031016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Right2
+      name: Green_Walk_Right_BigShield2
       rect:
         serializedVersion: 2
         x: 224
@@ -775,14 +762,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4184623f881b69458094505f5b87cb2
-      internalID: -1096151297
+      spriteID: ddea9b75e9000b04380840f3fdf664fc
+      internalID: -431458489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Right3
+      name: Green_Walk_Right_BigShield3
       rect:
         serializedVersion: 2
         x: 256
@@ -796,14 +783,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c2b9b9b09e05ed4280577ca27885066
-      internalID: -1855750181
+      spriteID: 9457a7953e989c6418fa7e2996b6bca2
+      internalID: -722284742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Right4
+      name: Green_Walk_Right_BigShield4
       rect:
         serializedVersion: 2
         x: 288
@@ -817,14 +804,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33ab283d63de3394cbfe4261ee542c00
-      internalID: 1451369779
+      spriteID: 581d016cb4e188c4cabef38c236e7cb2
+      internalID: -1601154972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Right1
+      name: Green_Attack_Right_BigShield1
       rect:
         serializedVersion: 2
         x: 320
@@ -838,14 +825,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ceafd2a6237b8145b9ed9a73f3f86f2
-      internalID: 2054375429
+      spriteID: 03f609400fbb45349ae3ad2cc259c07b
+      internalID: 917079225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Right2
+      name: Green_Attack_Right_BigShield2
       rect:
         serializedVersion: 2
         x: 352
@@ -859,14 +846,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f2a3eeda1cca244ead822d59f7b891d
-      internalID: -784621388
+      spriteID: 22a10062d2d8e3244a88085f5ca94633
+      internalID: -1938325498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left1
+      name: Green_Walk_Left1
       rect:
         serializedVersion: 2
         x: 0
@@ -880,14 +867,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaf94618ffc694344b879e03b77ab7f8
-      internalID: 2127527890
+      spriteID: 28eb78d82fb7de94fa2f8a2254077dfb
+      internalID: -792911490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left2
+      name: Green_Walk_Left2
       rect:
         serializedVersion: 2
         x: 32
@@ -901,14 +888,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dbf081f201a50f4bbb36b34e60afece
-      internalID: -1582210661
+      spriteID: a195a4af1e4844742b582514fae2db31
+      internalID: -32132402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left3
+      name: Green_Walk_Left3
       rect:
         serializedVersion: 2
         x: 64
@@ -922,14 +909,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64470cfa3ccd09545a81f3d554324a53
-      internalID: -559486951
+      spriteID: 85388207d58297047a2d279f4c471298
+      internalID: -170150454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left4
+      name: Green_Walk_Left4
       rect:
         serializedVersion: 2
         x: 96
@@ -943,14 +930,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef0973fb2b6f7c44bbcbb2344624010c
-      internalID: 1878544919
+      spriteID: 0da11b33e5e76e544bd229addcdc65cf
+      internalID: -1368455913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Left1
+      name: Green_Attack_Left1
       rect:
         serializedVersion: 2
         x: 128
@@ -964,14 +951,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc225e5b889111c419742392254d0a0d
-      internalID: 896178388
+      spriteID: f49d1f71739ff2c4f90bf1b582e94912
+      internalID: 276753623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Left2
+      name: Green_Attack_Left2
       rect:
         serializedVersion: 2
         x: 160
@@ -985,14 +972,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29d570e5d9f4ce546badfa9b219657a1
-      internalID: 1318486795
+      spriteID: 83206af0f570d2943a3a1cea9985a0a4
+      internalID: 1474996993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Left1
+      name: Green_Walk_Left_BigShield1
       rect:
         serializedVersion: 2
         x: 192
@@ -1006,14 +993,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebd37f4e603e0e84daf273a1d67f5fb2
-      internalID: -1900831036
+      spriteID: 92d5c418c0defdc44a78c2f2ae50c1a9
+      internalID: -1476721657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Left2
+      name: Green_Walk_Left_BigShield2
       rect:
         serializedVersion: 2
         x: 224
@@ -1027,14 +1014,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0d200d96b0fd6d42a71b10e29fb5deb
-      internalID: 653387401
+      spriteID: 0b1b816b386ac0e45b24096f5a3deb3f
+      internalID: -1642891553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Left3
+      name: Green_Walk_Left_BigShield3
       rect:
         serializedVersion: 2
         x: 256
@@ -1048,14 +1035,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1482ec3a9602f4940818b2914e71c1bb
-      internalID: -376934368
+      spriteID: c5dfbe26e118e8e479025c234b97733a
+      internalID: -325937971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Left4
+      name: Green_Walk_Left_BigShield4
       rect:
         serializedVersion: 2
         x: 288
@@ -1069,14 +1056,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa485302588b1a14ea3c3af2cb6a47d0
-      internalID: 920800493
+      spriteID: 99ac82ee810f0514b8e798529cd71622
+      internalID: 1349939395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Left1
+      name: Green_Attack_Left_BigShield1
       rect:
         serializedVersion: 2
         x: 320
@@ -1090,14 +1077,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d97b8f3fd0f63da45a4cb082a0b4b599
-      internalID: 769139655
+      spriteID: 29bcf7205decff642a6d8b41d4e38c7d
+      internalID: 731248528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Left2
+      name: Green_Attack_Left_BigShield2
       rect:
         serializedVersion: 2
         x: 352
@@ -1111,14 +1098,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6af6ee065e72d554e98d72ea0e16600c
-      internalID: -264508995
+      spriteID: db8baa2f32518184e9e63214a6263021
+      internalID: -1817130986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front1_Hurt1
+      name: Blue_Walk_Front1
       rect:
         serializedVersion: 2
         x: 0
@@ -1132,14 +1119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71ee92202c5fcd04f800ee518ccf6636
-      internalID: 399281498
+      spriteID: 52acc618d4354994584640b378aa04ff
+      internalID: 1596099682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front2_Hurt1
+      name: Blue_Walk_Front2
       rect:
         serializedVersion: 2
         x: 32
@@ -1153,14 +1140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b16fe8d60b1c58a488b6d180a49133c9
-      internalID: 30646117
+      spriteID: 960d59bbff8815541b305290a079f3e0
+      internalID: -1908783875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front3_Hurt1
+      name: Blue_Walk_Front3
       rect:
         serializedVersion: 2
         x: 64
@@ -1174,14 +1161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88085a597c7a9c54792648584d627e94
-      internalID: 645002288
+      spriteID: 0615c7a29a14e03439c59208dafa0476
+      internalID: 1980855747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front4_Hurt1
+      name: Blue_Walk_Front4
       rect:
         serializedVersion: 2
         x: 96
@@ -1195,14 +1182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55c90d1bef16d1e4ba65b1c58aba703f
-      internalID: 899439616
+      spriteID: e002c574ccfd84a4d8180d0a01f2e29e
+      internalID: 2081030435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Front1_Hurt1
+      name: Blue_Attack_Front1
       rect:
         serializedVersion: 2
         x: 128
@@ -1216,14 +1203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbc6f60cbf2f3004eadbfddd5458908d
-      internalID: -1048619647
+      spriteID: e60ebeab574940f418dbac558b626707
+      internalID: 874334326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Front2_Hurt1
+      name: Blue_Attack_Front2
       rect:
         serializedVersion: 2
         x: 160
@@ -1237,14 +1224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14dd02fb2e035b84582e75ccbe58353d
-      internalID: 1423438021
+      spriteID: 1ddf04cdb6e1dbe4c992d03de6f24b29
+      internalID: 50386068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Front1_Hurt1
+      name: Blue_Walk_Front_BigShield1
       rect:
         serializedVersion: 2
         x: 192
@@ -1258,14 +1245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9085fdd2ffaaa4e448b2a8fab8665b59
-      internalID: -209262395
+      spriteID: 309e8fcf42324c543b38f23ba2401873
+      internalID: 1386237870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Front2_Hurt1
+      name: Blue_Walk_Front_BigShield2
       rect:
         serializedVersion: 2
         x: 224
@@ -1279,14 +1266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: add3aab46aa619b47811610a286b1cae
-      internalID: -111699131
+      spriteID: 4e24e4b2ed0eebd4b9d61924aa8c2003
+      internalID: -1068851537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Front3_Hurt1
+      name: Blue_Walk_Front_BigShield3
       rect:
         serializedVersion: 2
         x: 256
@@ -1300,14 +1287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c9c032e7e62a444b9d2ed83b40b1160
-      internalID: -469576928
+      spriteID: 7d49213120fc08f45828751d77173976
+      internalID: 549678951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Front4_Hurt1
+      name: Blue_Walk_Front_BigShield4
       rect:
         serializedVersion: 2
         x: 288
@@ -1321,14 +1308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4168fe05dd1ccdc419291ce90ec9970e
-      internalID: -180799004
+      spriteID: 16dbaa88587fc6040aa66960cbf18146
+      internalID: -545829388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Front1_Hurt1
+      name: Blue_Attack_Front_BigShield1
       rect:
         serializedVersion: 2
         x: 320
@@ -1342,14 +1329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7e326f00525f8c4faf5851dae4b2cc6
-      internalID: 692800141
+      spriteID: 7ec59027cc721dd4b8d22072b708799d
+      internalID: -711802885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Front2_Hurt1
+      name: Blue_Attack_Front_BigShield2
       rect:
         serializedVersion: 2
         x: 352
@@ -1363,14 +1350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94608aa8452a2c34db30ba9847e575bc
-      internalID: 671744228
+      spriteID: f9d0893a9bed8044b821a54d71910d31
+      internalID: -2120160510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back1_Hurt1
+      name: Blue_Walk_Back1
       rect:
         serializedVersion: 2
         x: 0
@@ -1384,14 +1371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 475637233b1f918478f5e435c1ef4ddf
-      internalID: -232357536
+      spriteID: f673ea443182f494ba62965a7ec9f08a
+      internalID: 691555960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back2_Hurt1
+      name: Blue_Walk_Back2
       rect:
         serializedVersion: 2
         x: 32
@@ -1405,14 +1392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7f517f8701a499489b5a456cffdd0c8
-      internalID: 1283872828
+      spriteID: 274790faa7fcc6448a2c49a5da82e384
+      internalID: 519125461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back3_Hurt1
+      name: Blue_Walk_Back3
       rect:
         serializedVersion: 2
         x: 64
@@ -1426,18 +1413,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfae5bc2b6a909048ac57b2266a4cadd
-      internalID: 1025186513
+      spriteID: 43c2a0c318b3e9147855cbea4868f939
+      internalID: 2081982250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back4_Hurt1
+      name: Blue_Walk_Back4
       rect:
         serializedVersion: 2
         x: 96
-        y: 321
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1447,14 +1434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6015e68221f73d42bfcb5cf67de3145
-      internalID: -1538416497
+      spriteID: c9a7cef584681ab488c9efe6fdcfbee8
+      internalID: 58573043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Back1_Hurt1
+      name: Blue_Attack_Back1
       rect:
         serializedVersion: 2
         x: 128
@@ -1468,14 +1455,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3c91ebce1b1249418395c7fc679c82d
-      internalID: 879301763
+      spriteID: d8567db952598084cae2e81c1aa4c982
+      internalID: -1157425327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Back2_Hurt1
+      name: Blue_Attack_Back2
       rect:
         serializedVersion: 2
         x: 160
@@ -1489,14 +1476,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32c3c1335cf3bb94d94bec6de33637b5
-      internalID: -552645659
+      spriteID: d3d1942e199753740b7f0281dd7b8d23
+      internalID: 151709733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Back1_Hurt1
+      name: Blue_Walk_Back_BigShield1
       rect:
         serializedVersion: 2
         x: 192
@@ -1510,14 +1497,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10b883134df814344a5f3fe69f04358e
-      internalID: 184549716
+      spriteID: 70084bbeb4a2a5d4abb35ed872011ab2
+      internalID: 905662149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Back2_Hurt1
+      name: Blue_Walk_Back_BigShield2
       rect:
         serializedVersion: 2
         x: 224
@@ -1531,14 +1518,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0182f12d1567b2340bbd348ea8a618d8
-      internalID: -448195437
+      spriteID: 4080a7e0693cda44a804e2d2299b9062
+      internalID: 471924066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Back3_Hurt1
+      name: Blue_Walk_Back_BigShield3
       rect:
         serializedVersion: 2
         x: 256
@@ -1552,14 +1539,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c64713460f6670d4eb13bc6d35c1469c
-      internalID: -297357719
+      spriteID: d855a838724321b4295a0fef7f93a987
+      internalID: -1840023133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Back4_Hurt1
+      name: Blue_Walk_Back_BigShield4
       rect:
         serializedVersion: 2
         x: 288
@@ -1573,14 +1560,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67a8b8eff986e7642836f2d272639808
-      internalID: -1440987772
+      spriteID: ebffe06ef6d4abe4b83ecdd3e291ae66
+      internalID: 1096057096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Back1_Hurt1
+      name: Blue_Attack_Back_BigShield1
       rect:
         serializedVersion: 2
         x: 320
@@ -1594,14 +1581,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3931ffc3f3867e42913435ffadd0d0a
-      internalID: 687496904
+      spriteID: 5f844a885edd56240bf1fc2ba253439a
+      internalID: -1493279730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Back2_Hurt1
+      name: Blue_Attack_Back_BigShield2
       rect:
         serializedVersion: 2
         x: 352
@@ -1615,14 +1602,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53b60f441bb4bab42af9dd627ebdde54
-      internalID: 1646019677
+      spriteID: a0c94c2396654654c8b477e225ba8374
+      internalID: -743641771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Right1_Hurt1
+      name: Blue_Walk_Right1
       rect:
         serializedVersion: 2
         x: 0
@@ -1636,14 +1623,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed6a9bcdb82f68047b567f53a803694a
-      internalID: 1721005388
+      spriteID: 57e9d8a66c6c23a498ad2d646f3a0b44
+      internalID: -541909076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Right2_Hurt1
+      name: Blue_Walk_Right2
       rect:
         serializedVersion: 2
         x: 32
@@ -1657,14 +1644,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e89873e737a178049ad6f1eb2acafc24
-      internalID: -1456356566
+      spriteID: 5cacfccb2d82f1246bd9173fa2a21af4
+      internalID: -1033883225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Right3_Hurt1
+      name: Blue_Walk_Right3
       rect:
         serializedVersion: 2
         x: 64
@@ -1678,14 +1665,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbee30652b05933498df5f9b5e122f80
-      internalID: 394729094
+      spriteID: 51218f51664cf794faef6ed31dcdc9ba
+      internalID: 1979437445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Right4_Hurt1
+      name: Blue_Walk_Right4
       rect:
         serializedVersion: 2
         x: 96
@@ -1699,14 +1686,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c790810a34731f42b7ebfb1f40837e8
-      internalID: 995551530
+      spriteID: ca0f3abeded72b040b85aa40f5321a5b
+      internalID: 1983981206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Right1_Hurt1
+      name: Blue_Attack_Right1
       rect:
         serializedVersion: 2
         x: 128
@@ -1720,14 +1707,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1488fd668b915bc4ebc101602bf9c5bf
-      internalID: -486306639
+      spriteID: 6d779db7cc74b7446bc160cfb0716636
+      internalID: 2113615271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Right2_Hurt1
+      name: Blue_Attack_Right2
       rect:
         serializedVersion: 2
         x: 160
@@ -1741,14 +1728,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc039663d25a7b44b9ffb104b1dfa864
-      internalID: 56756536
+      spriteID: 598363d8e630b7c44827f9d6a97db045
+      internalID: 1855825169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Right1_Hurt1
+      name: Blue_Walk_Right_BigShield1
       rect:
         serializedVersion: 2
         x: 192
@@ -1762,14 +1749,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e35bf1b62d458bc4283023dc2da935d3
-      internalID: -725162372
+      spriteID: c5d536a69440cdf4a9ee7b48d06404be
+      internalID: 606974962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Right2_Hurt1
+      name: Blue_Walk_Right_BigShield2
       rect:
         serializedVersion: 2
         x: 224
@@ -1783,14 +1770,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bb2db01b2e492f4a99ced626bc463c6
-      internalID: -251338627
+      spriteID: b7889878cc1a7124595f282c5994ea2d
+      internalID: 977866063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Right3_Hurt1
+      name: Blue_Walk_Right_BigShield3
       rect:
         serializedVersion: 2
         x: 256
@@ -1804,14 +1791,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f304d3b8c07f24d4fabc3866a811e15c
-      internalID: -104510618
+      spriteID: 4a296e50f4223ad439308aaecf418ea4
+      internalID: 725887264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Right4_Hurt1
+      name: Blue_Walk_Right_BigShield4
       rect:
         serializedVersion: 2
         x: 288
@@ -1825,14 +1812,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ccb968e1f734fe428291d54a57ef3ea
-      internalID: 1717647140
+      spriteID: 86476bd3989ced24aabd9b5508764961
+      internalID: 1112339899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Right1_Hurt1
+      name: Blue_Attack_Right_BigShield1
       rect:
         serializedVersion: 2
         x: 320
@@ -1846,14 +1833,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79ae611499aa002459505b5895c128b0
-      internalID: -2019684918
+      spriteID: 5c1b907698649bf45b8eace1d55d9280
+      internalID: 27113444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Right2_Hurt1
+      name: Blue_Attack_Right_BigShield2
       rect:
         serializedVersion: 2
         x: 352
@@ -1867,14 +1854,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2f9392abccdbf5409400ff90efea217
-      internalID: -315048108
+      spriteID: 486023efeb52db04186ca764c940a048
+      internalID: -316130245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left1_Hurt1
+      name: Blue_Walk_Left1
       rect:
         serializedVersion: 2
         x: 0
@@ -1888,14 +1875,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77f2118280faedf459be42b211a57a73
-      internalID: 2006028827
+      spriteID: 92a186d1fcd4a764db96cc69eaf2f3ab
+      internalID: 1997054285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left2_Hurt1
+      name: Blue_Walk_Left2
       rect:
         serializedVersion: 2
         x: 32
@@ -1909,14 +1896,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 984bf6bfa3d1e09448f7cc3ab87d2975
-      internalID: -610121392
+      spriteID: 0025515c69c08904eada26aa543c6b58
+      internalID: 624609845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left3_Hurt1
+      name: Blue_Walk_Left3
       rect:
         serializedVersion: 2
         x: 64
@@ -1930,14 +1917,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76b9d67b1e19c7c4bb5cf432e2b0983e
-      internalID: -546757189
+      spriteID: 49d03e06d5291ed43a76a295bb73fd93
+      internalID: 878997077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left4_Hurt1
+      name: Blue_Walk_Left4
       rect:
         serializedVersion: 2
         x: 96
@@ -1951,14 +1938,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df9e5f095cb05344bbf50e6e8a387f3c
-      internalID: -770812605
+      spriteID: 4973c7d7e8826444ea679d9002ae69db
+      internalID: -1313166564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Left1_Hurt1
+      name: Blue_Attack_Left1
       rect:
         serializedVersion: 2
         x: 128
@@ -1972,14 +1959,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f8f02ed54808354db81543461080eea
-      internalID: 1855974233
+      spriteID: 5894f3d9bc677184c8402b642be2f2e0
+      internalID: 278785412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Left2_Hurt1
+      name: Blue_Attack_Left2
       rect:
         serializedVersion: 2
         x: 160
@@ -1993,14 +1980,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cec8b0e310533cb45b0c5d220b15ccf3
-      internalID: -1602723764
+      spriteID: 880a5cded0835d1409dbbfbd308f6479
+      internalID: -720784770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Left1_Hurt1
+      name: Blue_Walk_Left_BigShield1
       rect:
         serializedVersion: 2
         x: 192
@@ -2014,14 +2001,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 331f0eaa16791914381541f0cca279f9
-      internalID: -248176875
+      spriteID: 869123c187cb16041875fffad8817d56
+      internalID: -1378051024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Left2_Hurt1
+      name: Blue_Walk_Left_BigShield2
       rect:
         serializedVersion: 2
         x: 224
@@ -2035,14 +2022,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a848b39b38f6a4b4f881c7178875bfe6
-      internalID: -156970734
+      spriteID: b67b7cd7f992b75448e204180c634cfa
+      internalID: 732170852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Left3_Hurt1
+      name: Blue_Walk_Left_BigShield3
       rect:
         serializedVersion: 2
         x: 256
@@ -2056,14 +2043,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5e03b8b70d2fe74fa0c21e7c96b76ca
-      internalID: 1114010086
+      spriteID: 2f461419510c1d14a96b2ed933e11bda
+      internalID: -513251962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Left4_Hurt1
+      name: Blue_Walk_Left_BigShield4
       rect:
         serializedVersion: 2
         x: 288
@@ -2077,14 +2064,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7808f77b842b5bd45b9daac1f3877a02
-      internalID: -656802331
+      spriteID: b91755362bcee494a999bd7ba64d03f6
+      internalID: 1185786397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Left1_Hurt1
+      name: Blue_Attack_Left_BigShield1
       rect:
         serializedVersion: 2
         x: 320
@@ -2098,14 +2085,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c33caa3bba3f5ba40b5c12e6c632df80
-      internalID: 2068610851
+      spriteID: cf67fdb344e095c4382e53e91b8e01a8
+      internalID: 1142262622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Left2_Hurt1
+      name: Blue_Attack_Left_BigShield2
       rect:
         serializedVersion: 2
         x: 352
@@ -2119,14 +2106,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7c3921346bb0974eb9867c2c97c0559
-      internalID: -2084720900
+      spriteID: f14dc50b9be477046865587677804981
+      internalID: 1856377507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front1_Hurt2
+      name: Red_Walk_Front1
       rect:
         serializedVersion: 2
         x: 0
@@ -2140,14 +2127,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 252e6419a0974f34a95d369758e19b3f
-      internalID: -2001898633
+      spriteID: 9933967818bca354fb9c7912a12fc035
+      internalID: -665632427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front2_Hurt2
+      name: Red_Walk_Front2
       rect:
         serializedVersion: 2
         x: 32
@@ -2161,14 +2148,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daf3a7f236958894d98a9db6076f3a7d
-      internalID: 667399491
+      spriteID: e23b5ec899c0993418410cf52569fc44
+      internalID: -391206200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front3_Hurt2
+      name: Red_Walk_Front3
       rect:
         serializedVersion: 2
         x: 64
@@ -2182,14 +2169,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f231f4c40497bc4ebf4779ff03fcc34
-      internalID: 2143742739
+      spriteID: a140051ddc6cc7b419d58b9196c547ff
+      internalID: 927484019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Front4_Hurt2
+      name: Red_Walk_Front4
       rect:
         serializedVersion: 2
         x: 96
@@ -2203,14 +2190,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1438f6056093df4418f6722c3c5e91ad
-      internalID: 929808949
+      spriteID: 0b1e062e55e09024d9e91ce68f6d3503
+      internalID: 265273012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Front1_Hurt2
+      name: Red_Attack_Front1
       rect:
         serializedVersion: 2
         x: 128
@@ -2224,14 +2211,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c3b2a89cda20da4aa35f72f7b1f0f8f
-      internalID: -1018987741
+      spriteID: 8ebd8151f51ae1841987e5e584933ae5
+      internalID: -1427398598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Front2_Hurt2
+      name: Red_Attack_Front2
       rect:
         serializedVersion: 2
         x: 160
@@ -2245,14 +2232,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77e2ab653d4ea9046a141e991829ca58
-      internalID: -1366649401
+      spriteID: d7ecfef37d1cca6428a669267aa2b86e
+      internalID: -156541181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Front1_Hurt2
+      name: Red_Walk_Front_BigShield1
       rect:
         serializedVersion: 2
         x: 192
@@ -2266,14 +2253,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fee3ec9283af75d47ba08f071c3e3aab
-      internalID: 304030729
+      spriteID: db39cfe4d3fa1624b9ee3714c6696265
+      internalID: 1094094063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Front2_Hurt2
+      name: Red_Walk_Front_BigShield2
       rect:
         serializedVersion: 2
         x: 224
@@ -2287,14 +2274,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c649759ecfd91c74ba939774b87cb108
-      internalID: 366156836
+      spriteID: de1e5bd3541623547bb7c4d6a299cf34
+      internalID: -691020987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Front3_Hurt2
+      name: Red_Walk_Front_BigShield3
       rect:
         serializedVersion: 2
         x: 256
@@ -2308,14 +2295,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6abdfbe045d93b543b2706033663b3dc
-      internalID: -1023683922
+      spriteID: ec4fa73720fc3a248abedd8c2fefde00
+      internalID: -2118478034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Front4_Hurt2
+      name: Red_Walk_Front_BigShield4
       rect:
         serializedVersion: 2
         x: 288
@@ -2329,14 +2316,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5cfc154aae8fc94ea8c4417ca0a053c
-      internalID: 189293091
+      spriteID: 15cd8b2bdd236d44bab5a0f4b5153770
+      internalID: -474161100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Front1_Hurt2
+      name: Red_Attack_Front_BigShield1
       rect:
         serializedVersion: 2
         x: 320
@@ -2350,14 +2337,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b18f61b104178346bdc7b70a294fb09
-      internalID: -1888671679
+      spriteID: 55539816f8deb3c48bde2731db0cf0f1
+      internalID: -526630181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Front2_Hurt2
+      name: Red_Attack_Front_BigShield2
       rect:
         serializedVersion: 2
         x: 352
@@ -2371,14 +2358,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3275aa73597c764ab978f49bcba0bb5
-      internalID: -2026770683
+      spriteID: 6780129988153da46b9271a7df292d28
+      internalID: 728149333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back1_Hurt2
+      name: Red_Walk_Back1
       rect:
         serializedVersion: 2
         x: 0
@@ -2392,14 +2379,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 099a054d732371b48bed9970819c3968
-      internalID: 925143743
+      spriteID: 1e03eee96efe53c4c984a9d4d96bae12
+      internalID: 378733930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back2_Hurt2
+      name: Red_Walk_Back2
       rect:
         serializedVersion: 2
         x: 32
@@ -2413,14 +2400,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18803bb002af70240ae0dbbf4ad99566
-      internalID: -155743631
+      spriteID: a36b3192e13f1184bb2040084fc34311
+      internalID: -449336849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back3_Hurt2
+      name: Red_Walk_Back3
       rect:
         serializedVersion: 2
         x: 64
@@ -2434,14 +2421,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5497bf76b5f5894c87967aa1eecfe94
-      internalID: 160374937
+      spriteID: 7e918504b00953648bffb483893333e0
+      internalID: -1493153872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Back4_Hurt2
+      name: Red_Walk_Back4
       rect:
         serializedVersion: 2
         x: 96
@@ -2455,14 +2442,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfed91d7f06d5f648813fe26be3ff242
-      internalID: -21947320
+      spriteID: d57d2914a76c4f94aaa6bb6f183aa345
+      internalID: 331840232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Back1_Hurt2
+      name: Red_Attack_Back1
       rect:
         serializedVersion: 2
         x: 128
@@ -2476,18 +2463,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38b20d4f6249cd742a209f98016fc13e
-      internalID: 1888825331
+      spriteID: 3bca27c7c9a9aac48849b1d51b0efdab
+      internalID: 1847121386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Back2_Hurt2
+      name: Red_Attack_Back2
       rect:
         serializedVersion: 2
         x: 160
-        y: 191
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2497,14 +2484,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62d776efa0b10ab40b86a15d22e16f06
-      internalID: 1490287350
+      spriteID: 101a218b7021b454a8e3e56536d3552b
+      internalID: 160187275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Back1_Hurt2
+      name: Red_Walk_Back_BigShield1
       rect:
         serializedVersion: 2
         x: 192
@@ -2518,14 +2505,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 282800650bd64874688cefd2c0c3b7e6
-      internalID: -1658286760
+      spriteID: a1f48d1ccd2a4a941a94915c0db44841
+      internalID: -1789269509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Back2_Hurt2
+      name: Red_Walk_Back_BigShield2
       rect:
         serializedVersion: 2
         x: 224
@@ -2539,14 +2526,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2fb4d231077d124f842a6aaa38a7b74
-      internalID: -2022468671
+      spriteID: 44c6872d7f9df904d8bbf31f082369d2
+      internalID: -1139494622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Back3_Hurt2
+      name: Red_Walk_Back_BigShield3
       rect:
         serializedVersion: 2
         x: 256
@@ -2560,14 +2547,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbd9011e19be731419c1898b87a1d081
-      internalID: -1700156329
+      spriteID: 93a1f1ac905539d448c82074194ef28d
+      internalID: -785909239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Back4_Hurt2
+      name: Red_Walk_Back_BigShield4
       rect:
         serializedVersion: 2
         x: 288
@@ -2581,14 +2568,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cc65269c287f5a42bd63f920b6144b8
-      internalID: -1473116395
+      spriteID: 950acb4450d0ec347ac3a20b11d7d6ac
+      internalID: 1713823978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Back1_Hurt2
+      name: Red_Attack_Back_BigShield1
       rect:
         serializedVersion: 2
         x: 320
@@ -2602,14 +2589,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa80e099a7912384c89d58d814582090
-      internalID: -149601883
+      spriteID: 3f033c38f3f658c439cd8cacef745b82
+      internalID: 1328895201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Back2_Hurt2
+      name: Red_Attack_Back_BigShield2
       rect:
         serializedVersion: 2
         x: 352
@@ -2623,14 +2610,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3bec46184657e74e9f9b5f58f95c45b
-      internalID: -1871312124
+      spriteID: 412849c37ad2c154b9c19a374dee016b
+      internalID: -2113629064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Right1_Hurt2
+      name: Red_Walk_Right1
       rect:
         serializedVersion: 2
         x: 0
@@ -2644,14 +2631,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcb5df63ac1c75a4a9ad372eb691676c
-      internalID: -1227655288
+      spriteID: 8446c41628825b64eb2c0bd445cc6c08
+      internalID: -401786952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Right2_Hurt2
+      name: Red_Walk_Right2
       rect:
         serializedVersion: 2
         x: 32
@@ -2665,14 +2652,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fd4dce61f5a6804f9016a326d4a67df
-      internalID: -204862651
+      spriteID: ea7623b46220ebd428faa99eb69bd008
+      internalID: 1257660513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Right3_Hurt2
+      name: Red_Walk_Right3
       rect:
         serializedVersion: 2
         x: 64
@@ -2686,14 +2673,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a392f26c67e2f2749a9e949c672ccb62
-      internalID: 1112674191
+      spriteID: 000d357ca29b6cc4e8a4137bbd9ff7ec
+      internalID: -215609497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Right4_Hurt2
+      name: Red_Walk_Right4
       rect:
         serializedVersion: 2
         x: 96
@@ -2707,14 +2694,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c8c8032eca3a0546b8fb6853a8d501a
-      internalID: 235775401
+      spriteID: 4733f0545882f474098882059d13cbde
+      internalID: 1742827904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Right1_Hurt2
+      name: Red_Attack_Right1
       rect:
         serializedVersion: 2
         x: 128
@@ -2728,14 +2715,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63f43c66f4c2ccc409b76aaceaaff6cf
-      internalID: -583464089
+      spriteID: edba32337d0876f408501e57ca061391
+      internalID: 1226725013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Right2_Hurt2
+      name: Red_Attack_Right2
       rect:
         serializedVersion: 2
         x: 160
@@ -2749,14 +2736,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 612c1602f25c6784d82729d86486c669
-      internalID: -93392906
+      spriteID: 9ccccef23181dd3469d68ea7ca05ee72
+      internalID: 1758693684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Right1_Hurt2
+      name: Red_Walk_Right_BigShield1
       rect:
         serializedVersion: 2
         x: 192
@@ -2770,14 +2757,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f749ad318719be438ead04899844f06
-      internalID: 1580124448
+      spriteID: 776442c57fcadce4aadb348713a9376f
+      internalID: -1839796833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Right2_Hurt2
+      name: Red_Walk_Right_BigShield2
       rect:
         serializedVersion: 2
         x: 224
@@ -2791,14 +2778,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bdbd667c736daf4dbe93ef5bc3a10dc
-      internalID: -772325293
+      spriteID: 02b18571dcea2a748b30718a5d6e08f8
+      internalID: 1013319848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Right3_Hurt2
+      name: Red_Walk_Right_BigShield3
       rect:
         serializedVersion: 2
         x: 256
@@ -2812,14 +2799,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5f964d0c8a8c2141a3f2826780e9aa2
-      internalID: -460997043
+      spriteID: 02e9a7afedd1dc44da8440fcaf888c86
+      internalID: -1790964939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Right4_Hurt2
+      name: Red_Walk_Right_BigShield4
       rect:
         serializedVersion: 2
         x: 288
@@ -2833,14 +2820,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b5865e94a999ac429f5b3ccb947371f
-      internalID: -798522511
+      spriteID: 5e28d3077c943354e8567098c701e8cf
+      internalID: 1960618716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Right1_Hurt2
+      name: Red_Attack_Right_BigShield1
       rect:
         serializedVersion: 2
         x: 320
@@ -2854,14 +2841,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d65b733cdb69804d90a786748321970
-      internalID: 1960309454
+      spriteID: 1c83ccbabad529246aef8c94ec3aa6c5
+      internalID: -350784602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Right2_Hurt2
+      name: Red_Attack_Right_BigShield2
       rect:
         serializedVersion: 2
         x: 352
@@ -2875,14 +2862,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f141bbf0f75728a4084f1d81866ae32d
-      internalID: 1651941540
+      spriteID: e1c4d14efd451c2489e7e07dfe0da970
+      internalID: 535599510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left1_Hurt2
+      name: Red_Walk_Left1
       rect:
         serializedVersion: 2
         x: 0
@@ -2896,14 +2883,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68062485c6b002e45973425cedb28cf5
-      internalID: 2036403389
+      spriteID: a8156e0f97980c74d93d3911e82cd110
+      internalID: -2022819532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left2_Hurt2
+      name: Red_Walk_Left2
       rect:
         serializedVersion: 2
         x: 32
@@ -2917,14 +2904,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 290c33e85bf28484d9cdb2ae3e2de058
-      internalID: -1643877355
+      spriteID: 9d338bd896a327c48bb540f7b5cc689a
+      internalID: 436538927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left3_Hurt2
+      name: Red_Walk_Left3
       rect:
         serializedVersion: 2
         x: 64
@@ -2938,14 +2925,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32f1d3ccb3d4e2f4bbbdb010d19405e9
-      internalID: 1331440406
+      spriteID: 640526d927c6c254fa2015a502436c52
+      internalID: -1138890329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Left4_Hurt2
+      name: Red_Walk_Left4
       rect:
         serializedVersion: 2
         x: 96
@@ -2959,14 +2946,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29d501bf207cd8b459c6e4e744aca7ca
-      internalID: 1165281789
+      spriteID: 3ec33a48cbb50744caba89f85305513d
+      internalID: 142429058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Left1_Hurt2
+      name: Red_Attack_Left1
       rect:
         serializedVersion: 2
         x: 128
@@ -2980,14 +2967,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b301fe04ecd389c4aa8c07197effd47c
-      internalID: 697375372
+      spriteID: 4be1bb435a0522644ade2d8e9a327d93
+      internalID: -232746564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_Left2_Hurt2
+      name: Red_Attack_Left2
       rect:
         serializedVersion: 2
         x: 160
@@ -3001,14 +2988,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34886e1985711e94aa70ba7f9fd2c830
-      internalID: -414071364
+      spriteID: 3bd9a945764725343a876f5711f219a3
+      internalID: 1016366822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Left1_Hurt2
+      name: Red_Walk_Left_BigShield1
       rect:
         serializedVersion: 2
         x: 192
@@ -3022,14 +3009,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7c954e9742502845a8222352a7492cc
-      internalID: 444631355
+      spriteID: 838f0bffa7476514eae17df199601cc4
+      internalID: -871687651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Left2_Hurt2
+      name: Red_Walk_Left_BigShield2
       rect:
         serializedVersion: 2
         x: 224
@@ -3043,14 +3030,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69812a7f0c15c8c4c8f07d9a846b8b14
-      internalID: 1204750730
+      spriteID: 39e6dca36b0f8634ebf4adff029a0a11
+      internalID: -88344201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Left3_Hurt2
+      name: Red_Walk_Left_BigShield3
       rect:
         serializedVersion: 2
         x: 256
@@ -3064,14 +3051,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02cd91c2cf1d65944b67a5fcea07965a
-      internalID: 110174614
+      spriteID: 4111d61753ad3ee4aa1a108768e8ca48
+      internalID: -280416147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Walk_Left4_Hurt2
+      name: Red_Walk_Left_BigShield4
       rect:
         serializedVersion: 2
         x: 288
@@ -3085,14 +3072,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ede4e2d4a96bb7745be3477e1a89f781
-      internalID: 1665383652
+      spriteID: d625daf121026e643a8ea6e5929e03e5
+      internalID: 645488997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Left1_Hurt2
+      name: Red_Attack_Left_BigShield1
       rect:
         serializedVersion: 2
         x: 320
@@ -3106,14 +3093,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44565554a14997e48a69578a8ca557ce
-      internalID: -2047273746
+      spriteID: e5e1a5b720844f141a55160670253e25
+      internalID: -566051626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigShield_Attack_Left2_Hurt2
+      name: Red_Attack_Left_BigShield2
       rect:
         serializedVersion: 2
         x: 352
@@ -3127,14 +3114,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9cdc2f4d90bdec4eb1b3ad32c2ab8c4
-      internalID: -1324415653
+      spriteID: da6f647a8bfa77d4c857307dd020edba
+      internalID: 779161840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pickup_Small
+      name: Green_Pickup_Small
       rect:
         serializedVersion: 2
         x: 0
@@ -3148,14 +3135,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bc638e7494b6a54dac38807e7877506
-      internalID: -1841480658
+      spriteID: c3e4777ad7e33f74fa232eb7a19ff75b
+      internalID: -95740560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pickup_Large
+      name: Green_Pickup_Large
       rect:
         serializedVersion: 2
         x: 32
@@ -3169,14 +3156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a23f1e7c3a7657547b291295e44953e7
-      internalID: 2047615292
+      spriteID: 5a60ef6636dd7d24c9e0bfd0638be8f4
+      internalID: 1892486264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pickup_Small_Hurt1
+      name: Blue_Pickup_Small
       rect:
         serializedVersion: 2
         x: 64
@@ -3190,14 +3177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3703768690215a44d826e38f885979bd
-      internalID: -901615929
+      spriteID: c62260e2ae9afaa42bfdf4517fb99785
+      internalID: -1657479989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pickup_Large_Hurt1
+      name: Blue_Pickup_Large
       rect:
         serializedVersion: 2
         x: 96
@@ -3211,14 +3198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b76b7a13a0d3a6c4a910294730e06594
-      internalID: -1290643284
+      spriteID: 567285e4d4d150346890b8d1a0165f01
+      internalID: -1291777480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pickup_Small_Hurt2
+      name: Red_Pickup_Small
       rect:
         serializedVersion: 2
         x: 128
@@ -3232,14 +3219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3adfdea34874d045a3a3ede2cccbf26
-      internalID: -924730310
+      spriteID: 85be1dc643382f84b99d6fec1ce192cb
+      internalID: 1026486490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pickup_Large_Hurt2
+      name: Red_Pickup_Large
       rect:
         serializedVersion: 2
         x: 160
@@ -3253,134 +3240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc6169eec130c6044843cb34cb03bdfc
-      internalID: -1416854889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigShield_Pickup_Small
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aeb370ddb59733a49b9cc1400296ade0
-      internalID: 2092032140
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigShield_Pickup_Large
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e78b95f27ea064f48881f3db9913b7e7
-      internalID: -771926312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigShield_Pickup_Small_Hurt1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e7b64e4e0227e540a3165857acff867
-      internalID: -113635718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigShield_Pickup_Large_Hurt1
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f73683e9689afda469c51e494e2950a4
-      internalID: -403886113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigShield_Pickup_Small_Hurt2
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7acc769665bfa94f9f7a0a004b730cf
-      internalID: -1699674279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigShield_Pickup_Large_Hurt2
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 204a3accad5cc7844ab5715570b44aeb
-      internalID: 1319995411
+      spriteID: 0fb3afee48fa8044e80c6865c44bbf6d
+      internalID: -2065753362
       vertices: []
       indices: 
       edges: []
@@ -3396,162 +3257,156 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Attack_Back1: -295631627
-      Attack_Back1_Hurt1: 879301763
-      Attack_Back1_Hurt2: 1888825331
-      Attack_Back2: 843371341
-      Attack_Back2_Hurt1: -552645659
-      Attack_Back2_Hurt2: 1490287350
-      Attack_Front1: 675051820
-      Attack_Front1_Hurt1: -1048619647
-      Attack_Front1_Hurt2: -1018987741
-      Attack_Front2: -1712315665
-      Attack_Front2_Hurt1: 1423438021
-      Attack_Front2_Hurt2: -1366649401
-      Attack_Left1: 896178388
-      Attack_Left1_Hurt1: 1855974233
-      Attack_Left1_Hurt2: 697375372
-      Attack_Left2: 1318486795
-      Attack_Left2_Hurt1: -1602723764
-      Attack_Left2_Hurt2: -414071364
-      Attack_Right1: 907129734
-      Attack_Right1_Hurt1: -486306639
-      Attack_Right1_Hurt2: -583464089
-      Attack_Right2: -1710278349
-      Attack_Right2_Hurt1: 56756536
-      Attack_Right2_Hurt2: -93392906
-      BigShield_Attack_Back1: -813190789
-      BigShield_Attack_Back1_Hurt1: 687496904
-      BigShield_Attack_Back1_Hurt2: -149601883
-      BigShield_Attack_Back2: 978180701
-      BigShield_Attack_Back2_Hurt1: 1646019677
-      BigShield_Attack_Back2_Hurt2: -1871312124
-      BigShield_Attack_Front1: -474499820
-      BigShield_Attack_Front1_Hurt1: 692800141
-      BigShield_Attack_Front1_Hurt2: -1888671679
-      BigShield_Attack_Front2: -471662592
-      BigShield_Attack_Front2_Hurt1: 671744228
-      BigShield_Attack_Front2_Hurt2: -2026770683
-      BigShield_Attack_Left1: 769139655
-      BigShield_Attack_Left1_Hurt1: 2068610851
-      BigShield_Attack_Left1_Hurt2: -2047273746
-      BigShield_Attack_Left2: -264508995
-      BigShield_Attack_Left2_Hurt1: -2084720900
-      BigShield_Attack_Left2_Hurt2: -1324415653
-      BigShield_Attack_Right1: 2054375429
-      BigShield_Attack_Right1_Hurt1: -2019684918
-      BigShield_Attack_Right1_Hurt2: 1960309454
-      BigShield_Attack_Right2: -784621388
-      BigShield_Attack_Right2_Hurt1: -315048108
-      BigShield_Attack_Right2_Hurt2: 1651941540
-      BigShield_Pickup_Large: -771926312
-      BigShield_Pickup_Large_Hurt1: -403886113
-      BigShield_Pickup_Large_Hurt2: 1319995411
-      BigShield_Pickup_Small: 2092032140
-      BigShield_Pickup_Small_Hurt1: -113635718
-      BigShield_Pickup_Small_Hurt2: -1699674279
-      BigShield_Walk_Back1: 1170926598
-      BigShield_Walk_Back1_Hurt1: 184549716
-      BigShield_Walk_Back1_Hurt2: -1658286760
-      BigShield_Walk_Back2: -1019331747
-      BigShield_Walk_Back2_Hurt1: -448195437
-      BigShield_Walk_Back2_Hurt2: -2022468671
-      BigShield_Walk_Back3: 1735109461
-      BigShield_Walk_Back3_Hurt1: -297357719
-      BigShield_Walk_Back3_Hurt2: -1700156329
-      BigShield_Walk_Back4: -1022628795
-      BigShield_Walk_Back4_Hurt1: -1440987772
-      BigShield_Walk_Back4_Hurt2: -1473116395
-      BigShield_Walk_Front1: -1163423828
-      BigShield_Walk_Front1_Hurt1: -209262395
-      BigShield_Walk_Front1_Hurt2: 304030729
-      BigShield_Walk_Front2: 1871636757
-      BigShield_Walk_Front2_Hurt1: -111699131
-      BigShield_Walk_Front2_Hurt2: 366156836
-      BigShield_Walk_Front3: -81019049
-      BigShield_Walk_Front3_Hurt1: -469576928
-      BigShield_Walk_Front3_Hurt2: -1023683922
-      BigShield_Walk_Front4: -1954554620
-      BigShield_Walk_Front4_Hurt1: -180799004
-      BigShield_Walk_Front4_Hurt2: 189293091
-      BigShield_Walk_Left1: -1900831036
-      BigShield_Walk_Left1_Hurt1: -248176875
-      BigShield_Walk_Left1_Hurt2: 444631355
-      BigShield_Walk_Left2: 653387401
-      BigShield_Walk_Left2_Hurt1: -156970734
-      BigShield_Walk_Left2_Hurt2: 1204750730
-      BigShield_Walk_Left3: -376934368
-      BigShield_Walk_Left3_Hurt1: 1114010086
-      BigShield_Walk_Left3_Hurt2: 110174614
-      BigShield_Walk_Left4: 920800493
-      BigShield_Walk_Left4_Hurt1: -656802331
-      BigShield_Walk_Left4_Hurt2: 1665383652
-      BigShield_Walk_Right1: -1670092970
-      BigShield_Walk_Right1_Hurt1: -725162372
-      BigShield_Walk_Right1_Hurt2: 1580124448
-      BigShield_Walk_Right2: -1096151297
-      BigShield_Walk_Right2_Hurt1: -251338627
-      BigShield_Walk_Right2_Hurt2: -772325293
-      BigShield_Walk_Right3: -1855750181
-      BigShield_Walk_Right3_Hurt1: -104510618
-      BigShield_Walk_Right3_Hurt2: -460997043
-      BigShield_Walk_Right4: 1451369779
-      BigShield_Walk_Right4_Hurt1: 1717647140
-      BigShield_Walk_Right4_Hurt2: -798522511
-      Pickup_Large: 2047615292
-      Pickup_Large_Hurt1: -1290643284
-      Pickup_Large_Hurt2: -1416854889
-      Pickup_Small: -1841480658
-      Pickup_Small_Hurt1: -901615929
-      Pickup_Small_Hurt2: -924730310
-      Walk_Back1: -1239701935
-      Walk_Back1_Hurt1: -232357536
-      Walk_Back1_Hurt2: 925143743
-      Walk_Back2: 1889704781
-      Walk_Back2_Hurt1: 1283872828
-      Walk_Back2_Hurt2: -155743631
-      Walk_Back3: -1846676837
-      Walk_Back3_Hurt1: 1025186513
-      Walk_Back3_Hurt2: 160374937
-      Walk_Back4: -206315290
-      Walk_Back4_Hurt1: -1538416497
-      Walk_Back4_Hurt2: -21947320
-      Walk_Front1: 1674764973
-      Walk_Front1_Hurt1: 399281498
-      Walk_Front1_Hurt2: -2001898633
-      Walk_Front2: -185655649
-      Walk_Front2_Hurt1: 30646117
-      Walk_Front2_Hurt2: 667399491
-      Walk_Front3: -1850516965
-      Walk_Front3_Hurt1: 645002288
-      Walk_Front3_Hurt2: 2143742739
-      Walk_Front4: -397245688
-      Walk_Front4_Hurt1: 899439616
-      Walk_Front4_Hurt2: 929808949
-      Walk_Left1: 2127527890
-      Walk_Left1_Hurt1: 2006028827
-      Walk_Left1_Hurt2: 2036403389
-      Walk_Left2: -1582210661
-      Walk_Left2_Hurt1: -610121392
-      Walk_Left2_Hurt2: -1643877355
-      Walk_Left3: -559486951
-      Walk_Left3_Hurt1: -546757189
-      Walk_Left3_Hurt2: 1331440406
-      Walk_Left4: 1878544919
-      Walk_Left4_Hurt1: -770812605
-      Walk_Left4_Hurt2: 1165281789
-      Walk_Right1: 87053445
-      Walk_Right1_Hurt1: 1721005388
-      Walk_Right1_Hurt2: -1227655288
-      Walk_Right2: -1489790451
-      Walk_Right2_Hurt1: -1456356566
-      Walk_Right2_Hurt2: -204862651
-      Walk_Right3: -1507915079
-      Walk_Right3_Hurt1: 394729094
-      Walk_Right3_Hurt2: 1112674191
-      Walk_Right4: -1262201590
-      Walk_Right4_Hurt1: 995551530
-      Walk_Right4_Hurt2: 235775401
+      Blue_Attack_Back1: -1157425327
+      Blue_Attack_Back2: 151709733
+      Blue_Attack_Back_BigShield1: -1493279730
+      Blue_Attack_Back_BigShield2: -743641771
+      Blue_Attack_Front1: 874334326
+      Blue_Attack_Front2: 50386068
+      Blue_Attack_Front_BigShield1: -711802885
+      Blue_Attack_Front_BigShield2: -2120160510
+      Blue_Attack_Left1: 278785412
+      Blue_Attack_Left2: -720784770
+      Blue_Attack_Left_BigShield1: 1142262622
+      Blue_Attack_Left_BigShield2: 1856377507
+      Blue_Attack_Right1: 2113615271
+      Blue_Attack_Right2: 1855825169
+      Blue_Attack_Right_BigShield1: 27113444
+      Blue_Attack_Right_BigShield2: -316130245
+      Blue_Pickup_Large: -1291777480
+      Blue_Pickup_Small: -1657479989
+      Blue_Walk_Back1: 691555960
+      Blue_Walk_Back2: 519125461
+      Blue_Walk_Back3: 2081982250
+      Blue_Walk_Back4: 58573043
+      Blue_Walk_Back_BigShield1: 905662149
+      Blue_Walk_Back_BigShield2: 471924066
+      Blue_Walk_Back_BigShield3: -1840023133
+      Blue_Walk_Back_BigShield4: 1096057096
+      Blue_Walk_Front1: 1596099682
+      Blue_Walk_Front2: -1908783875
+      Blue_Walk_Front3: 1980855747
+      Blue_Walk_Front4: 2081030435
+      Blue_Walk_Front_BigShield1: 1386237870
+      Blue_Walk_Front_BigShield2: -1068851537
+      Blue_Walk_Front_BigShield3: 549678951
+      Blue_Walk_Front_BigShield4: -545829388
+      Blue_Walk_Left1: 1997054285
+      Blue_Walk_Left2: 624609845
+      Blue_Walk_Left3: 878997077
+      Blue_Walk_Left4: -1313166564
+      Blue_Walk_Left_BigShield1: -1378051024
+      Blue_Walk_Left_BigShield2: 732170852
+      Blue_Walk_Left_BigShield3: -513251962
+      Blue_Walk_Left_BigShield4: 1185786397
+      Blue_Walk_Right1: -541909076
+      Blue_Walk_Right2: -1033883225
+      Blue_Walk_Right3: 1979437445
+      Blue_Walk_Right4: 1983981206
+      Blue_Walk_Right_BigShield1: 606974962
+      Blue_Walk_Right_BigShield2: 977866063
+      Blue_Walk_Right_BigShield3: 725887264
+      Blue_Walk_Right_BigShield4: 1112339899
+      Green_Attack_Back1: -482749081
+      Green_Attack_Back2: -1157169013
+      Green_Attack_Back_BigShield1: -1635298009
+      Green_Attack_Back_BigShield2: 1167543606
+      Green_Attack_Front1: -1280500700
+      Green_Attack_Front2: 963090820
+      Green_Attack_Front_BigShield1: -1865541021
+      Green_Attack_Front_BigShield2: -811857198
+      Green_Attack_Left1: 276753623
+      Green_Attack_Left2: 1474996993
+      Green_Attack_Left_BigShield1: 731248528
+      Green_Attack_Left_BigShield2: -1817130986
+      Green_Attack_Right1: -982438883
+      Green_Attack_Right2: 1249725841
+      Green_Attack_Right_BigShield1: 917079225
+      Green_Attack_Right_BigShield2: -1938325498
+      Green_Pickup_Large: 1892486264
+      Green_Pickup_Small: -95740560
+      Green_Walk_Back1: -849884922
+      Green_Walk_Back2: -720561974
+      Green_Walk_Back3: 454833563
+      Green_Walk_Back4: 2042221163
+      Green_Walk_Back_BigShield1: 1023498434
+      Green_Walk_Back_BigShield2: -1708455297
+      Green_Walk_Back_BigShield3: 1593253129
+      Green_Walk_Back_BigShield4: -1509415600
+      Green_Walk_Front1: 1637296277
+      Green_Walk_Front2: -216270670
+      Green_Walk_Front3: -1282631194
+      Green_Walk_Front4: 2010331127
+      Green_Walk_Front_BigShield1: -1710994380
+      Green_Walk_Front_BigShield2: 297972948
+      Green_Walk_Front_BigShield3: 1744372480
+      Green_Walk_Front_BigShield4: -2127600961
+      Green_Walk_Left1: -792911490
+      Green_Walk_Left2: -32132402
+      Green_Walk_Left3: -170150454
+      Green_Walk_Left4: -1368455913
+      Green_Walk_Left_BigShield1: -1476721657
+      Green_Walk_Left_BigShield2: -1642891553
+      Green_Walk_Left_BigShield3: -325937971
+      Green_Walk_Left_BigShield4: 1349939395
+      Green_Walk_Right1: 1560748030
+      Green_Walk_Right2: 1054340233
+      Green_Walk_Right3: -1158922381
+      Green_Walk_Right4: 1824085951
+      Green_Walk_Right_BigShield1: -557031016
+      Green_Walk_Right_BigShield2: -431458489
+      Green_Walk_Right_BigShield3: -722284742
+      Green_Walk_Right_BigShield4: -1601154972
+      Red_Attack_Back1: 1847121386
+      Red_Attack_Back2: 160187275
+      Red_Attack_Back_BigShield1: 1328895201
+      Red_Attack_Back_BigShield2: -2113629064
+      Red_Attack_Front1: -1427398598
+      Red_Attack_Front2: -156541181
+      Red_Attack_Front_BigShield1: -526630181
+      Red_Attack_Front_BigShield2: 728149333
+      Red_Attack_Left1: -232746564
+      Red_Attack_Left2: 1016366822
+      Red_Attack_Left_BigShield1: -566051626
+      Red_Attack_Left_BigShield2: 779161840
+      Red_Attack_Right1: 1226725013
+      Red_Attack_Right2: 1758693684
+      Red_Attack_Right_BigShield1: -350784602
+      Red_Attack_Right_BigShield2: 535599510
+      Red_Pickup_Large: -2065753362
+      Red_Pickup_Small: 1026486490
+      Red_Walk_Back1: 378733930
+      Red_Walk_Back2: -449336849
+      Red_Walk_Back3: -1493153872
+      Red_Walk_Back4: 331840232
+      Red_Walk_Back_BigShield1: -1789269509
+      Red_Walk_Back_BigShield2: -1139494622
+      Red_Walk_Back_BigShield3: -785909239
+      Red_Walk_Back_BigShield4: 1713823978
+      Red_Walk_Front1: -665632427
+      Red_Walk_Front2: -391206200
+      Red_Walk_Front3: 927484019
+      Red_Walk_Front4: 265273012
+      Red_Walk_Front_BigShield1: 1094094063
+      Red_Walk_Front_BigShield2: -691020987
+      Red_Walk_Front_BigShield3: -2118478034
+      Red_Walk_Front_BigShield4: -474161100
+      Red_Walk_Left1: -2022819532
+      Red_Walk_Left2: 436538927
+      Red_Walk_Left3: -1138890329
+      Red_Walk_Left4: 142429058
+      Red_Walk_Left_BigShield1: -871687651
+      Red_Walk_Left_BigShield2: -88344201
+      Red_Walk_Left_BigShield3: -280416147
+      Red_Walk_Left_BigShield4: 645488997
+      Red_Walk_Right1: -401786952
+      Red_Walk_Right2: 1257660513
+      Red_Walk_Right3: -215609497
+      Red_Walk_Right4: 1742827904
+      Red_Walk_Right_BigShield1: -1839796833
+      Red_Walk_Right_BigShield2: 1013319848
+      Red_Walk_Right_BigShield3: -1790964939
+      Red_Walk_Right_BigShield4: 1960618716
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

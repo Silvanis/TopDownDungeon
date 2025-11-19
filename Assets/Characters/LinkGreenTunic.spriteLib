@@ -19,24 +19,24 @@ MonoBehaviour:
     m_OverrideEntries:
     - m_Name: Walk_Left1
       m_Hash: 123457098
-      m_Sprite: {fileID: 2127527890, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: -792911490, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 2127527890, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: -792911490, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     - m_Name: Walk_Left2
       m_Hash: 508731376
-      m_Sprite: {fileID: -1582210661, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: -32132402, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -1582210661, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: -32132402, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     - m_Name: Walk_Left3
       m_Hash: 693481318
-      m_Sprite: {fileID: -559486951, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: -170150454, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -559486951, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: -170150454, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     - m_Name: Walk_Left4
       m_Hash: 925973189
-      m_Sprite: {fileID: 1878544919, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: -1368455913, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 1878544919, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: -1368455913, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 4
   - m_Name: WalkRight
@@ -45,24 +45,24 @@ MonoBehaviour:
     m_OverrideEntries:
     - m_Name: Walk_Right1
       m_Hash: 162534444
-      m_Sprite: {fileID: 87053445, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: 1560748030, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 87053445, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: 1560748030, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     - m_Name: Walk_Right2
       m_Hash: 280577430
-      m_Sprite: {fileID: -1489790451, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: 1054340233, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -1489790451, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: 1054340233, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     - m_Name: Walk_Right3
       m_Hash: 666793216
-      m_Sprite: {fileID: -1507915079, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: -1158922381, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -1507915079, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: -1158922381, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     - m_Name: Walk_Right4
       m_Hash: 970645667
-      m_Sprite: {fileID: -1262201590, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: 1824085951, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -1262201590, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: 1824085951, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 4
   - m_Name: WalkFront
@@ -71,24 +71,24 @@ MonoBehaviour:
     m_OverrideEntries:
     - m_Name: Walk_Front1
       m_Hash: 134129263
-      m_Sprite: {fileID: 1674764973, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: 1637296277, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 1674764973, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: 1637296277, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     - m_Name: Walk_Front2
       m_Hash: 519567317
-      m_Sprite: {fileID: -185655649, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: -216270670, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -185655649, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: -216270670, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     - m_Name: Walk_Front3
       m_Hash: 703645507
-      m_Sprite: {fileID: -1850516965, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: -1282631194, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -1850516965, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: -1282631194, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     - m_Name: Walk_Front4
       m_Hash: 932467424
-      m_Sprite: {fileID: -397245688, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: 2010331127, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -397245688, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: 2010331127, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 4
   - m_Name: WalkBack
@@ -97,26 +97,26 @@ MonoBehaviour:
     m_OverrideEntries:
     - m_Name: Walk_Back1
       m_Hash: 1016605449
-      m_Sprite: {fileID: -1239701935, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: -849884922, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -1239701935, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: -849884922, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     - m_Name: Walk_Back2
       m_Hash: 630291123
-      m_Sprite: {fileID: 1889704781, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: -720561974, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 1889704781, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: -720561974, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     - m_Name: Walk_Back3
       m_Hash: 311839269
-      m_Sprite: {fileID: -1846676837, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: 454833563, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -1846676837, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: 454833563, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     - m_Name: Walk_Back4
       m_Hash: 217243526
-      m_Sprite: {fileID: -206315290, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_Sprite: {fileID: 2042221163, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -206315290, guid: 5410bee99caa53f4cbe3ebe125902a33, type: 3}
+      m_SpriteOverride: {fileID: 2042221163, guid: 3a11a798154f32f4c96b8c84e217ed32, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 4
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638361824222133816
+  m_ModificationHash: 638991627127602096
   m_Version: 1
