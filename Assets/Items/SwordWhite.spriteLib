@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Sword
+    m_Hash: 455403531
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Sword_Up
+      m_Hash: 697899581
+      m_Sprite: {fileID: -159827594, guid: e229f0005b801944abe4a6a41f3d6b91, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1665162227, guid: e229f0005b801944abe4a6a41f3d6b91, type: 3}
+    - m_Name: Sword_Down
+      m_Hash: 603487611
+      m_Sprite: {fileID: 1299583178, guid: e229f0005b801944abe4a6a41f3d6b91, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: -601061570, guid: e229f0005b801944abe4a6a41f3d6b91, type: 3}
+    - m_Name: Sword_Left
+      m_Hash: 90180136
+      m_Sprite: {fileID: -427021787, guid: e229f0005b801944abe4a6a41f3d6b91, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1964285996, guid: e229f0005b801944abe4a6a41f3d6b91, type: 3}
+    - m_Name: Sword_Right
+      m_Hash: 48837481
+      m_Sprite: {fileID: 458249240, guid: e229f0005b801944abe4a6a41f3d6b91, type: 3}
+      m_FromMain: 1
+      m_SpriteOverride: {fileID: 1294487108, guid: e229f0005b801944abe4a6a41f3d6b91, type: 3}
+    m_FromMain: 1
+    m_EntryOverrideCount: 4
+  m_PrimaryLibraryGUID: cf0b1affc4b910843af22e24db31a6d9
+  m_ModificationHash: 639046051721713504
+  m_Version: 1

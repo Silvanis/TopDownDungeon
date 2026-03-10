@@ -1,0 +1,1956 @@
+fileFormatVersion: 2
+guid: e229f0005b801944abe4a6a41f3d6b91
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sword_Wooden_Up
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 7, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b942cf5f6b542364a965072e578d441c
+      internalID: -159827594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Wooden_Down
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 7, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2a61324ce15ee4b9c4ae64f4c64c66
+      internalID: 1299583178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Wooden_Left
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: 16, y: -7}
+        - {x: 16, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26083b2bb594564db62864eb8c471ec
+      internalID: -427021787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Wooden_Right
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: 16, y: -7}
+        - {x: 16, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827b23877029fb846b5b6b3a9e6b6805
+      internalID: 458249240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_White_Up
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 7, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65322f3bd7de02343b52405a79359181
+      internalID: 1665162227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_White_Down
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 7, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f830196d811ff74d8b7a356766bf66d
+      internalID: -601061570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_White_Left
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: 16, y: -7}
+        - {x: 16, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5704fb2091ef8484bbc74746bf47098a
+      internalID: 1964285996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_White_Right
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: 16, y: -7}
+        - {x: 16, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe219425f65f05a4abf5d57cae45b432
+      internalID: 1294487108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Magic_Up
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 7, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c06eef109e7c647916defed6544b7a
+      internalID: -335272301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Magic_Down
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 7, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c613d29d2777e4e966aeabd88381ea
+      internalID: 1174504256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Magic_Left
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: 16, y: -7}
+        - {x: 16, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: af77b877d4adfdf48a8c110885ffd9fe
+      internalID: -1939189305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_Magic_Right
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: 16, y: -7}
+        - {x: 16, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8765b74a53e5e649bbea1d045c273b8
+      internalID: -173830760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boomerang_Wooden1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -11}
+        - {x: -13, y: 12}
+        - {x: 12, y: 12}
+        - {x: 12, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fd0dcaddf6d024682f52288d8534ae
+      internalID: -924263862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boomerang_Wooden2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -11}
+        - {x: -13, y: 12}
+        - {x: 12, y: 12}
+        - {x: 12, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972fc31aac08cd046ac0f9f807c37540
+      internalID: 951420721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boomerang_Wooden3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -11}
+        - {x: -13, y: 12}
+        - {x: 12, y: 12}
+        - {x: 12, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95cb2b4a98efcf44b85344aa01fbd8d
+      internalID: 860550088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boomerang_Wooden4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -11}
+        - {x: -13, y: 12}
+        - {x: 12, y: 12}
+        - {x: 12, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff88f4cbb984a24b925fcd5268b7a14
+      internalID: 1071646351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boomerang_Blue1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -11}
+        - {x: -13, y: 12}
+        - {x: 12, y: 12}
+        - {x: 12, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ddd210ffeb25047958623cc148997e
+      internalID: 489899668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boomerang_Blue2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -11}
+        - {x: -13, y: 12}
+        - {x: 12, y: 12}
+        - {x: 12, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: af66741d497b64b41bbe129fe16c3d69
+      internalID: 992861261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boomerang_Blue3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -11}
+        - {x: -13, y: 12}
+        - {x: 12, y: 12}
+        - {x: 12, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6462a4b4e8c88c64bb0c690a8b1195d6
+      internalID: 1279833671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boomerang_Blue4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -11}
+        - {x: -13, y: 12}
+        - {x: 12, y: 12}
+        - {x: 12, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6739e3d82d83e46bc0dec71b83e7dd
+      internalID: -955553124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_Wooden_Up
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 7, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b059f309b697641b38b662a37812eb
+      internalID: -594902265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_Wooden_Down
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 7, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b8c679bee1df54984dc4bcd868b2c1
+      internalID: -1893705838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_Wooden_Left
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: 16, y: -7}
+        - {x: 16, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e94896894ce29e4687ae666861f8940
+      internalID: 683083806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_Wooden_Right
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: 16, y: -7}
+        - {x: 16, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9b84b68c44c1b46ba7c52bb3206566
+      internalID: -1997772250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_Magic_Up
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 7, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41091f6736204e4e8798df6f3480a9f
+      internalID: 663372754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_Magic_Down
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 7, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338c854a0d6c7ee48b46ef0f2d088f24
+      internalID: 577767317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_Magic_Left
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: 16, y: -7}
+        - {x: 16, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d2e37c8674c1c41bc56e084c10aa2c
+      internalID: 363033443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_Magic_Right
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 9}
+        - {x: -16, y: -7}
+        - {x: 16, y: -7}
+        - {x: 16, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb6040f5ab44de4498e52861803a47a
+      internalID: 2089083530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicWand_Up
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba641b21384d1849b9a4fcdaac2cb29
+      internalID: 1672793197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicWand_Down
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79356c951869cd34b9fc6dbce2261562
+      internalID: -977030325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicWand_Left
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723e7f4b2575dd146bf86cc0cc755f75
+      internalID: 1802421643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicWand_Right
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99886dc98ee262044b88c2f812145749
+      internalID: -2065846664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicWand_Projectile_Up
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -9, y: 16}
+        - {x: -9, y: -2}
+        - {x: -5, y: -16}
+        - {x: 6, y: -16}
+        - {x: 9, y: -2}
+        - {x: 10, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f755d6d1b9b970946a09150070bcd598
+      internalID: -97073391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicWand_Projectile_Down
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: 16}
+        - {x: -9, y: 0}
+        - {x: -9, y: -16}
+        - {x: 9, y: -16}
+        - {x: 8, y: -1}
+        - {x: 3, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e1dd1af60624c4fa521764d1aef77a
+      internalID: 1013876551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicWand_Projectile_Left
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 10}
+        - {x: -16, y: -6}
+        - {x: -3, y: -10}
+        - {x: 16, y: -3}
+        - {x: 16, y: 6}
+        - {x: -2, y: 13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7a918da00c2bc42a2d86717058da5b
+      internalID: 840844387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicWand_Projectile_Right
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: 10}
+        - {x: -16, y: 6}
+        - {x: -16, y: -2}
+        - {x: -3, y: -7}
+        - {x: 16, y: -6}
+        - {x: 16, y: 11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce769f2e2a3c53048a34eed7965774bd
+      internalID: 474866943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Sword_Wooden
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33898feb51c0c3347a42a4ece248a71b
+      internalID: 417425207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Sword_White
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9303cbafeaf77244d8aeebf673f127d2
+      internalID: -2047535507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Sword_Magic
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07bc424d9787804992078865be0d490
+      internalID: -1247407774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_BigShield
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce89b9346ebb1d4991397a63df9035b
+      internalID: -1045748378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Bow
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6020251901f9ace4a967ef463aac0067
+      internalID: 1565767439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Arrow_Wooden
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63187affaa897f47a0de75193783868
+      internalID: 1683067107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Arrow_Magic
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec92275e24b1d4409a63a1fcd1ed838
+      internalID: 111522539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Boomerang_Wooden
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2606ac236552f3d45afa8280c1fce1a4
+      internalID: 2043562713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Boomerang_Magic
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91efbf2a74cfb74781c1fa63bfbee63
+      internalID: -65689571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Candle_Blue
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e17e22c95dd59944a1161e52373bcd6
+      internalID: -656295180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Candle_Red
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc34bfe882d8a374c8fcb73aa3be6072
+      internalID: -1767944207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_MagicWand
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefbc4d2439c34f4a9c6ec9a73250352
+      internalID: 1620624970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Flute
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584efe0920cf09c4ca3f7f885ca291b3
+      internalID: -710193014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Bomb
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465b634bdb9990b41a0307bbd560bbad
+      internalID: -164178823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Stepladder
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedc0e1cc57002345b3b8e27c9dc6c0c
+      internalID: 1808822251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Raft
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa89efaeafcb72a49817d6b50b21edee
+      internalID: -1144068116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Power_Bracelet
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28262792a33de2e4bbe06add702a0a13
+      internalID: -1337303976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Ring_Blue
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bc7d3d4a0301242a5cc4ebd26432ec
+      internalID: -421111064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Ring_Red
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb77bd78aaec9014dba3c6a378eee9a5
+      internalID: 1030147632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Book_Of_Magic
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f1c864f77aed8469968044df9cde96
+      internalID: 1869089950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Potion_Blue
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8599f0ec7c4a2f24eb965643eae22494
+      internalID: 1985769479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Potion_Red
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfe00ee5b03cc94e8994b2b67fbe727
+      internalID: 1235000915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Meat
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bc6c20b7780304f8b6abae5e674932
+      internalID: -563903360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Letter
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2e06c2d377bbf4096890650348961f
+      internalID: -54554042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Key_Skeleton
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4298ce4a880b3924d9061128ef2cfc75
+      internalID: 811196163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Heart_Container
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e41154ab47b86f4bb7381e2630ee0fe
+      internalID: -88536657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Rupee_Green
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f7330b15fd36749ad1474f767e9c22
+      internalID: -16311226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Rupee_Blue
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aae1e6d59c5f994a89c28485aa90bd5
+      internalID: 1494666279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Heart
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2195f1048a5d39e479ca08e4d52b590f
+      internalID: -1677341004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Fairy1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 14}
+        - {x: -12, y: -10}
+        - {x: -10, y: -14}
+        - {x: 8, y: -14}
+        - {x: 11, y: -10}
+        - {x: 11, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf105913ba5d17a4e867c65311a68626
+      internalID: -846731373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Fairy2
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 14}
+        - {x: -12, y: -10}
+        - {x: -10, y: -14}
+        - {x: 8, y: -14}
+        - {x: 11, y: -10}
+        - {x: 11, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526eb557a7ec146448a528bca14804e1
+      internalID: 1753326853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Stopwatch
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d441b8538488f44db93fb455c3c6dbd
+      internalID: 1377516090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Dungeon_Map
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46b45127459e2d42ad62177aa60f031
+      internalID: -751625741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Dungeon_Compass
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb225903d3ed09049b6fb924066e17d6
+      internalID: -1277012844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pickup_Dungeon_Key
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e4af67682ba7648a4d8f3c4a7f92fa
+      internalID: 921024582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arrow_Magic_Down: 577767317
+      Arrow_Magic_Left: 363033443
+      Arrow_Magic_Right: 2089083530
+      Arrow_Magic_Up: 663372754
+      Arrow_Wooden_Down: -1893705838
+      Arrow_Wooden_Left: 683083806
+      Arrow_Wooden_Right: -1997772250
+      Arrow_Wooden_Up: -594902265
+      Boomerang_Blue1: 489899668
+      Boomerang_Blue2: 992861261
+      Boomerang_Blue3: 1279833671
+      Boomerang_Blue4: -955553124
+      Boomerang_Wooden1: -924263862
+      Boomerang_Wooden2: 951420721
+      Boomerang_Wooden3: 860550088
+      Boomerang_Wooden4: 1071646351
+      MagicWand_Down: -977030325
+      MagicWand_Left: 1802421643
+      MagicWand_Projectile_Down: 1013876551
+      MagicWand_Projectile_Left: 840844387
+      MagicWand_Projectile_Right: 474866943
+      MagicWand_Projectile_Up: -97073391
+      MagicWand_Right: -2065846664
+      MagicWand_Up: 1672793197
+      Pickup_Arrow_Magic: 111522539
+      Pickup_Arrow_Wooden: 1683067107
+      Pickup_BigShield: -1045748378
+      Pickup_Bomb: -164178823
+      Pickup_Book_Of_Magic: 1869089950
+      Pickup_Boomerang_Magic: -65689571
+      Pickup_Boomerang_Wooden: 2043562713
+      Pickup_Bow: 1565767439
+      Pickup_Candle_Blue: -656295180
+      Pickup_Candle_Red: -1767944207
+      Pickup_Dungeon_Compass: -1277012844
+      Pickup_Dungeon_Key: 921024582
+      Pickup_Dungeon_Map: -751625741
+      Pickup_Fairy1: -846731373
+      Pickup_Fairy2: 1753326853
+      Pickup_Flute: -710193014
+      Pickup_Heart: -1677341004
+      Pickup_Heart_Container: -88536657
+      Pickup_Key_Skeleton: 811196163
+      Pickup_Letter: -54554042
+      Pickup_MagicWand: 1620624970
+      Pickup_Meat: -563903360
+      Pickup_Potion_Blue: 1985769479
+      Pickup_Potion_Red: 1235000915
+      Pickup_Power_Bracelet: -1337303976
+      Pickup_Raft: -1144068116
+      Pickup_Ring_Blue: -421111064
+      Pickup_Ring_Red: 1030147632
+      Pickup_Rupee_Blue: 1494666279
+      Pickup_Rupee_Green: -16311226
+      Pickup_Stepladder: 1808822251
+      Pickup_Stopwatch: 1377516090
+      Pickup_Sword_Magic: -1247407774
+      Pickup_Sword_White: -2047535507
+      Pickup_Sword_Wooden: 417425207
+      Sword_Magic_Down: 1174504256
+      Sword_Magic_Left: -1939189305
+      Sword_Magic_Right: -173830760
+      Sword_Magic_Up: -335272301
+      Sword_White_Down: -601061570
+      Sword_White_Left: 1964285996
+      Sword_White_Right: 1294487108
+      Sword_White_Up: 1665162227
+      Sword_Wooden_Down: 1299583178
+      Sword_Wooden_Left: -427021787
+      Sword_Wooden_Right: 458249240
+      Sword_Wooden_Up: -159827594
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

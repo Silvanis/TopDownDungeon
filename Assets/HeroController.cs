@@ -8,32 +8,42 @@ using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class HeroController : MonoBehaviour
 {
+    //---Movement---
     [SerializeField]
     private float moveSpeed = 10.0f;
     [SerializeField]
     private float roomMoveTime = 1.0f;
-    [SerializeField]
-    private int knockbackFrames = 3;
-    [SerializeField]
-    private float invincibilityDuration = 3.0f;
-    private float invincibilityAccumulator = 0.0f;
-    private int remainingKnockbackFrames = 0;
     private Rigidbody2D rigidbody2d;
     private Vector2 currentMoveVector = new Vector2(0.0f, 0.0f);
     public MoveDirection currentMoveDirection { get; private set; }
     private MoveDirection previousMoveDirection;
-    private Vector2 knockbackDirection;
-    private KnockbackStrength knockbackStrength;
+    private PlayerInput m_playerInput;
     private Animator heroAnimationController;
+
+
+    //---State---
     private bool isPaused = false;
     private bool isInvincible = false;
-    private PlayerInput m_playerInput;
     private CHARACTER_STATE currentState = CHARACTER_STATE.NORMAL;
+
+    //---Knockback---
+    [SerializeField]
+    private int knockbackFrames = 3;
+    [SerializeField]
+    private int remainingKnockbackFrames = 0;
+    private Vector2 knockbackDirection;
+    private KnockbackStrength knockbackStrength;
+
+    //---Storing last hit to reapply knockback when invuln ends---
     private bool isStillTouching = false;
     private int lastEnemyDamage;
     private GameObject lastEnemy;
     private Vector2 lastEnemyKnockbackDirection;
     private KnockbackStrength lastEnemyKnockbackStrength;
+
+    //---Invuln---
+    private float invincibilityDuration = 3.0f;
+    private float invincibilityAccumulator = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -104,7 +114,7 @@ public class HeroController : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (Time.timeScale <= 0.01f ) //no character input for you!
+        if (Time.timeScale <= 0.01f || currentState != CHARACTER_STATE.NORMAL) //no character input for you!
         {
             return;
         }
@@ -118,34 +128,31 @@ public class HeroController : MonoBehaviour
         {
             Vector2 adjustedPosition = rigidbody2d.position;
             ResetAnimationTrigger();
+            ResetMovementTrigger();
             switch (currentMoveDirection)
             {
                 case MoveDirection.MOVE_UP:
-                    heroAnimationController.SetTrigger("MoveUp");
                     adjustedPosition.x = Mathf.Round(rigidbody2d.position.x * 2) / 2;
                     rigidbody2d.position = adjustedPosition;
                     break;
                 case MoveDirection.MOVE_DOWN:
-                    heroAnimationController.SetTrigger("MoveDown");
                     adjustedPosition.x = Mathf.Round(rigidbody2d.position.x * 2) / 2;
                     rigidbody2d.position = adjustedPosition;
 
                     break;
                 case MoveDirection.MOVE_LEFT:
-                    heroAnimationController.SetTrigger("MoveLeft");
                     adjustedPosition.y = Mathf.Round(rigidbody2d.position.y * 2) / 2;
                     rigidbody2d.position = adjustedPosition;
                     break;
                 case MoveDirection.MOVE_RIGHT:
-                    heroAnimationController.SetTrigger("MoveRight");
                     adjustedPosition.y = Mathf.Round(rigidbody2d.position.y * 2) / 2;
                     rigidbody2d.position = adjustedPosition;
                     break;
                 case MoveDirection.MOVE_IDLE:
-                    heroAnimationController.SetTrigger("Idle");
+                    
                     break;
                 default:
-                    heroAnimationController.SetTrigger("Idle");
+                    
                     break;
             }
         }
@@ -156,6 +163,11 @@ public class HeroController : MonoBehaviour
 
     public void OnPause(InputAction.CallbackContext context)
     {
+        if (Time.timeScale <= 0.01f) //no character input for you!
+        {
+            return;
+        }
+
         if (context.performed)
         {
             isPaused = !isPaused;
@@ -166,6 +178,19 @@ public class HeroController : MonoBehaviour
             else
             {
                 Time.timeScale = 1.0f;
+            }
+        }
+    }
+
+    public void OnPrimaryWeapon(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if (currentState == CHARACTER_STATE.NORMAL) //don't attack unless allowed
+            {
+                ResetAnimationTrigger();
+                currentState = CHARACTER_STATE.ATTACKING;
+                heroAnimationController.SetTrigger("Attack");
             }
         }
     }
@@ -272,25 +297,37 @@ public class HeroController : MonoBehaviour
 
     void ResetAnimationTrigger()
     {
-        switch (previousMoveDirection)
+        foreach (var param in heroAnimationController.parameters)
+        {
+            if (param.type == AnimatorControllerParameterType.Trigger)
+            {
+                heroAnimationController.ResetTrigger(param.name);
+            }
+        }
+
+    }
+
+    void ResetMovementTrigger()
+    {
+        switch (currentMoveDirection)
         {
             case MoveDirection.MOVE_UP:
-                heroAnimationController.ResetTrigger("MoveUp");
+                heroAnimationController.SetTrigger("MoveUp");
                 break;
             case MoveDirection.MOVE_DOWN:
-                heroAnimationController.ResetTrigger("MoveDown");
+                heroAnimationController.SetTrigger("MoveDown");
                 break;
             case MoveDirection.MOVE_LEFT:
-                heroAnimationController.ResetTrigger("MoveLeft");
+                heroAnimationController.SetTrigger("MoveLeft");
                 break;
             case MoveDirection.MOVE_RIGHT:
-                heroAnimationController.ResetTrigger("MoveRight");
+                heroAnimationController.SetTrigger("MoveRight");
                 break;
             case MoveDirection.MOVE_IDLE:
-                heroAnimationController.ResetTrigger("Idle");
+                heroAnimationController.SetTrigger("Idle");
                 break;
             default:
-                heroAnimationController.ResetTrigger("Idle");
+                heroAnimationController.SetTrigger("Idle");
                 break;
         }
     }
@@ -352,6 +389,14 @@ public class HeroController : MonoBehaviour
         
     }
 
+    public void AttackEnded()
+    {
+        currentState = CHARACTER_STATE.NORMAL;
+        currentMoveVector = m_playerInput.actions["Move"].ReadValue<Vector2>();
+        AnalyzeMovementVector();
+        ResetMovementTrigger();
+    }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject == lastEnemy)
@@ -371,6 +416,7 @@ public class HeroController : MonoBehaviour
     private enum CHARACTER_STATE
     {
         NORMAL,
+        ATTACKING,
         KNOCKBACK,
         DYING,
         DEAD

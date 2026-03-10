@@ -706,7 +706,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Green_Attack_Rigth2
+      name: Green_Attack_Right2
       rect:
         serializedVersion: 2
         x: 160
@@ -3320,9 +3320,9 @@ TextureImporter:
       Green_Attack_Left_BigShield1: -379173340
       Green_Attack_Left_BigShield2: 1913783623
       Green_Attack_Right1: 19538677
+      Green_Attack_Right2: -1959493422
       Green_Attack_Right_BigShield1: -1372367576
       Green_Attack_Right_BigShield2: -332086090
-      Green_Attack_Rigth2: -1959493422
       Green_Pickup_Large: 71410088
       Green_Pickup_Small: -2108247240
       Green_Walk_Back1: 631067040
