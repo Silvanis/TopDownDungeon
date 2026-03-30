@@ -883,6 +883,7 @@ GameObject:
   - component: {fileID: 502370133}
   - component: {fileID: 502370132}
   - component: {fileID: 502370131}
+  - component: {fileID: 502370134}
   m_Layer: 7
   m_Name: SwordSprite
   m_TagString: Untagged
@@ -918,9 +919,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CategoryHash: 1.3640739e-22
-  m_labelHash: 6.7991165e-14
+  m_labelHash: 1.5281284e-16
   m_SpriteKey: 0
-  m_SpriteHash: 142744303
+  m_SpriteHash: 207488405
 --- !u!114 &502370132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -933,7 +934,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Library: []
+  m_Library:
+  - m_Name: Sword
+    m_Hash: 0
+    m_CategoryList:
+    - m_Name: Wooden
+      m_Hash: 0
+      m_Sprite: {fileID: -159827594, guid: e229f0005b801944abe4a6a41f3d6b91, type: 3}
   m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: cf0b1affc4b910843af22e24db31a6d9, type: 3}
 --- !u!212 &502370133
 SpriteRenderer:
@@ -987,6 +994,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &502370134
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502370129}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.3125, y: 0.5}
+      - {x: -0.3125, y: -0.21875}
+      - {x: 0.21875, y: -0.21875}
+      - {x: 0.21875, y: 0.5}
+  m_UseDelaunayMesh: 0
 --- !u!1001 &507460539
 PrefabInstance:
   m_ObjectHideFlags: 0

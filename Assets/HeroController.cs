@@ -88,6 +88,10 @@ public class HeroController : MonoBehaviour
             else
             {
                 currentState = CHARACTER_STATE.NORMAL;
+                currentMoveDirection = MoveDirection.MOVE_IDLE;
+                ResetAnimationTrigger();
+                currentMoveVector = Vector2.zero;
+                ResetMovementTrigger();
             }
 
         }
