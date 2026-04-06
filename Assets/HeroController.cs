@@ -91,6 +91,7 @@ public class HeroController : MonoBehaviour
                 currentMoveDirection = MoveDirection.MOVE_IDLE;
                 ResetAnimationTrigger();
                 currentMoveVector = Vector2.zero;
+                rigidbody2d.velocity = Vector2.zero; //fixes a bug where momentum from knockback was being stored
                 ResetMovementTrigger();
             }
 

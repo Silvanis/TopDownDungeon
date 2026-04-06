@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class SwordController : MonoBehaviour
 {
+    [SerializeField]
+    private Sprite woodenSword;
+    [SerializeField]
+    private Sprite whiteSword;
+    [SerializeField]
+    private Sprite magicSword;
+    private Sprite currentSword;
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentSword = woodenSword;
     }
 
     // Update is called once per frame
@@ -19,8 +26,48 @@ public class SwordController : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
-            Debug.Log("Hit " +  collision.gameObject.name);
+            MoveDirection direction;
+            Vector2 contactDirection = new Vector2();
+            contactDirection = transform.parent.position - transform.position; //get direction by comparing the swod's position to the hero
+            if (Mathf.Abs(contactDirection.x) > Mathf.Abs(contactDirection.y)) //left or right
+            {
+                if (contactDirection.x > 0)
+                {
+                    direction = MoveDirection.MOVE_LEFT;
+                }
+                else
+                {
+                    direction = MoveDirection.MOVE_RIGHT;
+                }
+            }
+            else //up or down
+            {
+                if (contactDirection.y > 0) 
+                {
+                    direction = MoveDirection.MOVE_DOWN;
+                }
+                else
+                {
+                    direction = MoveDirection.MOVE_UP;
+                }
+                    
+            }
+            
+            Debug.Log("Hit " + collision.gameObject.name + " in this direction: " + direction);
+            collision.gameObject.GetComponent<SkellyEnemy>().GetHit(direction);
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+
+            Vector2 contactDirection = new Vector2();
+            contactDirection = collision.transform.position - transform.position;
+            contactDirection = collision.GetContact(0).normal;
+            Debug.Log("Hit " + collision.gameObject.name + " in this direction: " + contactDirection);
+        }
     }
 }

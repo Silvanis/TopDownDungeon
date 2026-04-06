@@ -22,6 +22,15 @@ public class SkellyEnemy : MonoBehaviour
     private bool reachedPosition = false;
     private MoveDirection currentDirection = MoveDirection.MOVE_IDLE;
     private float distanceTravelled = 0.0f;
+
+    //---Knockback---
+    [SerializeField]
+    private int knockbackFrames = 3;
+    [SerializeField]
+    private int remainingKnockbackFrames = 0;
+    private Vector2 knockbackDirection;
+    private KnockbackStrength knockbackStrength = KnockbackStrength.STRONG;
+    private bool isKnockedBack = false;
     
     // Start is called before the first frame update
     void Start()
@@ -45,7 +54,25 @@ public class SkellyEnemy : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (isKnockedBack)
+        {
+            if (remainingKnockbackFrames > 0)
+            {
+                float movementDistance = (float)knockbackStrength / (float)knockbackFrames;
+                rigidbody2d.MovePosition(rigidbody2d.position + (knockbackDirection * movementDistance));
+                remainingKnockbackFrames--;
+            }
+            else
+            {
+                isKnockedBack = false;
+                ChangePosition();
+            }
+            return;
+        }
+
         if (currentDirection == MoveDirection.MOVE_IDLE) { return; }
+
+       
 
         float distanceIncrement = movementSpeed * Time.fixedDeltaTime;
         distanceTravelled += distanceIncrement;
@@ -183,6 +210,30 @@ public class SkellyEnemy : MonoBehaviour
         else
         {
             reachedPosition = false;
+        }
+    }
+
+    public void GetHit(MoveDirection directionHit)
+    {
+        isKnockedBack = true;
+        remainingKnockbackFrames = knockbackFrames;
+        switch (directionHit)
+        {
+            case MoveDirection.MOVE_IDLE:
+                knockbackDirection = Vector2.zero;
+                break;
+            case MoveDirection.MOVE_UP:
+                knockbackDirection = Vector2.up;
+                break;
+            case MoveDirection.MOVE_DOWN:
+                knockbackDirection = Vector2.down;
+                break;
+            case MoveDirection.MOVE_LEFT:
+                knockbackDirection = Vector2.left;
+                break;
+            case MoveDirection.MOVE_RIGHT:
+                knockbackDirection = Vector2.right;
+                break;
         }
     }
 }
