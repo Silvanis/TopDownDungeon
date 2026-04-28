@@ -49,7 +49,7 @@ public class SkellyEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        rigidbody2d.velocity = Vector2.zero;
     }
 
     private void FixedUpdate()

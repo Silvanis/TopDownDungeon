@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c0f6e3aa224cc4d9fce0feaa85c4a2, type: 3}
+  m_Name: RoomData
+  m_EditorClassIdentifier: 
+  mapDimensions: {x: 6, y: 6}
+  rooms:
+  - roomPosition: {x: 1, y: 0}
+    cameraPosition: {x: -16, y: 55.5}
+    doors:
+    - doorLocation: {x: -9.5, y: 55.5}
+      doorType: 2
+    enemies: []
+    items: []
+    stairs:
+    - stairEntrance: {x: -15.5, y: 55.5}
+      stairExit: {x: -20.5, y: 49.5}
+  - roomPosition: {x: 2, y: 0}
+    cameraPosition: {x: 0, y: 55.5}
+    doors:
+    - doorLocation: {x: -6.5, y: 55.5}
+      doorType: 2
+    - doorLocation: {x: 0, y: 51.5}
+      doorType: 2
+    enemies: []
+    items:
+    - itemPrefab: {fileID: 0}
+      itemSpawn: 0
+      itemSpawnLocation: {x: 0.5, y: 57.5}
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 0, y: 0}
+    cameraPosition: {x: 0, y: 0}
+    doors: []
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 2, y: 6}
+    cameraPosition: {x: 0, y: 0.5}
+    doors:
+    - doorLocation: {x: -6.5, y: 0.5}
+      doorType: 0
+    - doorLocation: {x: 0, y: 4.5}
+      doorType: 2
+    - doorLocation: {x: 6.5, y: 0.5}
+      doorType: 0
+    enemies: []
+    items: []
+    stairs: []
+  - roomPosition: {x: 3, y: 6}
+    cameraPosition: {x: 16, y: 0.5}
+    doors:
+    - doorLocation: {x: 9.5, y: 0.5}
+      doorType: 0
+    enemies:
+    - enemyPrefab: {fileID: 7150162656278984390, guid: 295617fdaa8294d4892384d9eb8f1d17, type: 3}
+      enemySpawnLocation: {x: 15.5, y: 0.5}
+      enemyCarriedItem: {fileID: 0}
+    - enemyPrefab: {fileID: 7150162656278984390, guid: 295617fdaa8294d4892384d9eb8f1d17, type: 3}
+      enemySpawnLocation: {x: 18.5, y: 2.5}
+      enemyCarriedItem: {fileID: 0}
+    - enemyPrefab: {fileID: 7150162656278984390, guid: 295617fdaa8294d4892384d9eb8f1d17, type: 3}
+      enemySpawnLocation: {x: 12.5, y: 2.5}
+      enemyCarriedItem: {fileID: 0}
+    - enemyPrefab: {fileID: 7150162656278984390, guid: 295617fdaa8294d4892384d9eb8f1d17, type: 3}
+      enemySpawnLocation: {x: 13.5, y: -1.5}
+      enemyCarriedItem: {fileID: 0}
+    - enemyPrefab: {fileID: 7150162656278984390, guid: 295617fdaa8294d4892384d9eb8f1d17, type: 3}
+      enemySpawnLocation: {x: 19.5, y: -1.5}
+      enemyCarriedItem: {fileID: 0}
+    items: []
+    stairs: []
