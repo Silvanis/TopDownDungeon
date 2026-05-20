@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 
@@ -16,12 +14,21 @@ public class SkellyEnemy : MonoBehaviour
     private KnockbackStrength knockback;
     [SerializeField]
     private int damageDealt = 1;
+    [SerializeField]
+    private GameObject spawnCloud;
+    [SerializeField]
+    private float spawnTime;
+    [SerializeField]
+    private int initialHP;
+    private int currentHP;
     private Animator animator;
     private Rigidbody2D rigidbody2d;
     private Vector2 currentMoveVector = Vector2.zero;
     private bool reachedPosition = false;
-    private MoveDirection currentDirection = MoveDirection.MOVE_IDLE;
+    private MOVEDIRECTION currentDirection = MOVEDIRECTION.MOVE_IDLE;
     private float distanceTravelled = 0.0f;
+    private ENEMY_STATE currentState;
+    private SpriteRenderer spriteRenderer;
 
     //---Knockback---
     [SerializeField]
@@ -30,7 +37,6 @@ public class SkellyEnemy : MonoBehaviour
     private int remainingKnockbackFrames = 0;
     private Vector2 knockbackDirection;
     private KnockbackStrength knockbackStrength = KnockbackStrength.STRONG;
-    private bool isKnockedBack = false;
     
     // Start is called before the first frame update
     void Start()
@@ -38,23 +44,50 @@ public class SkellyEnemy : MonoBehaviour
         
         animator = gameObject.GetComponentInChildren<Animator>();
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
+        spriteRenderer = gameObject.GetComponentInChildren<SpriteRenderer>();
+        currentState = ENEMY_STATE.ENEMY_STATE_SPAWNING;
+        spriteRenderer.enabled = false;
+        currentHP = initialHP;
+        StartCoroutine(SpawnEffects());
     }
 
     private void Awake()
     {
         animator = gameObject.GetComponentInChildren<Animator>();
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
-        ChangePosition();
+        //ChangePosition();
     }
     // Update is called once per frame
     void Update()
     {
+        if (currentState == ENEMY_STATE.ENEMY_STATE_DYING)
+        {
+            Destroy(gameObject);
+        }
         rigidbody2d.velocity = Vector2.zero;
     }
 
     private void FixedUpdate()
     {
-        if (isKnockedBack)
+        if (currentState == ENEMY_STATE.ENEMY_STATE_MOVING)
+        {
+            float distanceIncrement = movementSpeed * Time.fixedDeltaTime;
+            distanceTravelled += distanceIncrement;
+            CheckForReachedPosition();
+            if (reachedPosition)
+            {
+                ChangePosition();
+            }
+            rigidbody2d.MovePosition(rigidbody2d.position + (currentMoveVector * distanceIncrement));
+            return;
+        }
+
+        else if (currentState == ENEMY_STATE.ENEMY_STATE_SPAWNING)
+        {
+            return;
+        }
+
+        else if (currentState == ENEMY_STATE.ENEMY_STATE_KNOCKBACK)
         {
             if (remainingKnockbackFrames > 0)
             {
@@ -64,24 +97,20 @@ public class SkellyEnemy : MonoBehaviour
             }
             else
             {
-                isKnockedBack = false;
+                currentState = ENEMY_STATE.ENEMY_STATE_IDLE;
                 ChangePosition();
             }
             return;
         }
 
-        if (currentDirection == MoveDirection.MOVE_IDLE) { return; }
-
-       
-
-        float distanceIncrement = movementSpeed * Time.fixedDeltaTime;
-        distanceTravelled += distanceIncrement;
-        CheckForReachedPosition();
-        if (reachedPosition) 
-        {
-            ChangePosition();
+        else if (currentState == ENEMY_STATE.ENEMY_STATE_IDLE) 
+        { 
+            return; 
         }
-        rigidbody2d.MovePosition(rigidbody2d.position + (currentMoveVector * distanceIncrement));
+
+
+
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -100,26 +129,26 @@ public class SkellyEnemy : MonoBehaviour
     private void ChangePosition()
     {
         bool validDirection = false;
-        MoveDirection newDirection = RollDirection();
+        MOVEDIRECTION newDirection = RollDirection();
         LayerMask mask = LayerMask.GetMask("Default", "Walls", "BlocksEnemy"); 
         while(!validDirection) 
         {
 
             switch (newDirection)
             {
-                case MoveDirection.MOVE_IDLE:
+                case MOVEDIRECTION.MOVE_IDLE:
                     currentMoveVector = Vector2.zero;
                     break;
-                case MoveDirection.MOVE_UP:
+                case MOVEDIRECTION.MOVE_UP:
                     currentMoveVector = Vector2.up;
                     break;
-                case MoveDirection.MOVE_DOWN:
+                case MOVEDIRECTION.MOVE_DOWN:
                     currentMoveVector = Vector2.down;
                     break;
-                case MoveDirection.MOVE_LEFT:
+                case MOVEDIRECTION.MOVE_LEFT:
                     currentMoveVector = Vector2.left;
                     break;
-                case MoveDirection.MOVE_RIGHT:
+                case MOVEDIRECTION.MOVE_RIGHT:
                     currentMoveVector = Vector2.right;
                     break;
             }
@@ -147,6 +176,7 @@ public class SkellyEnemy : MonoBehaviour
         }
 
         currentDirection = newDirection;
+        currentState = ENEMY_STATE.ENEMY_STATE_MOVING;
         ChangeFacing();
     }
 
@@ -154,41 +184,42 @@ public class SkellyEnemy : MonoBehaviour
     {
         switch (currentDirection)
         {
-            case MoveDirection.MOVE_IDLE:
+            case MOVEDIRECTION.MOVE_IDLE:
                 animator.SetTrigger("Idle");
                 break;
-            case MoveDirection.MOVE_UP:
+            case MOVEDIRECTION.MOVE_UP:
                 animator.SetTrigger("MoveUp");
                 break;
-            case MoveDirection.MOVE_DOWN:
+            case MOVEDIRECTION.MOVE_DOWN:
                 animator.SetTrigger("MoveDown");
                 break;
-            case MoveDirection.MOVE_LEFT:
+            case MOVEDIRECTION.MOVE_LEFT:
                 animator.SetTrigger("MoveLeft");
                 break;
-            case MoveDirection.MOVE_RIGHT:
+            case MOVEDIRECTION.MOVE_RIGHT:
                 animator.SetTrigger("MoveRight");
                 break;
         }
     }
 
-    private MoveDirection RollDirection()
+    private MOVEDIRECTION RollDirection()
     {
-        MoveDirection newDirection;
+        MOVEDIRECTION newDirection;
         //don't roll idle more than once
-        if (currentDirection == MoveDirection.MOVE_IDLE) 
+        if (currentDirection == MOVEDIRECTION.MOVE_IDLE) 
         {
-            newDirection = (MoveDirection)UnityEngine.Random.Range(0, 4);
+            newDirection = (MOVEDIRECTION)UnityEngine.Random.Range(0, 4);
         }
         else
         {
-            newDirection = (MoveDirection)UnityEngine.Random.Range(0, 5);
+            newDirection = (MOVEDIRECTION)UnityEngine.Random.Range(0, 5);
         }
         return newDirection;
     }
 
     private IEnumerator Idle(float idleTime)
     {
+        currentState = ENEMY_STATE.ENEMY_STATE_IDLE;
         yield return new WaitForSeconds(idleTime);
         distanceTravelled = 0;
         ChangePosition();
@@ -213,27 +244,53 @@ public class SkellyEnemy : MonoBehaviour
         }
     }
 
-    public void GetHit(MoveDirection directionHit)
+    public void GetHit(HitPacket hitPacket)
     {
-        isKnockedBack = true;
-        remainingKnockbackFrames = knockbackFrames;
-        switch (directionHit)
+        currentHP -= hitPacket.damageAmount;
+        if (currentHP <= 0)
         {
-            case MoveDirection.MOVE_IDLE:
+            currentState = ENEMY_STATE.ENEMY_STATE_DYING;
+            return;
+        }
+        currentState = ENEMY_STATE.ENEMY_STATE_KNOCKBACK;
+        remainingKnockbackFrames = knockbackFrames;
+        switch (hitPacket.knockbackDirection)
+        {
+            case MOVEDIRECTION.MOVE_IDLE:
                 knockbackDirection = Vector2.zero;
                 break;
-            case MoveDirection.MOVE_UP:
+            case MOVEDIRECTION.MOVE_UP:
                 knockbackDirection = Vector2.up;
                 break;
-            case MoveDirection.MOVE_DOWN:
+            case MOVEDIRECTION.MOVE_DOWN:
                 knockbackDirection = Vector2.down;
                 break;
-            case MoveDirection.MOVE_LEFT:
+            case MOVEDIRECTION.MOVE_LEFT:
                 knockbackDirection = Vector2.left;
                 break;
-            case MoveDirection.MOVE_RIGHT:
+            case MOVEDIRECTION.MOVE_RIGHT:
                 knockbackDirection = Vector2.right;
                 break;
         }
     }
+
+    private IEnumerator SpawnEffects()
+    {
+        GameObject spawnCloudInstance = null;
+        spawnCloudInstance = Instantiate(spawnCloud, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(spawnTime);
+        spriteRenderer.enabled = true;
+        ChangePosition();
+    }
+}
+
+public enum ENEMY_STATE
+{
+    ENEMY_STATE_SPAWNING,
+    ENEMY_STATE_IDLE,
+    ENEMY_STATE_MOVING,
+    ENEMY_STATE_ATTACKING,
+    ENEMY_STATE_KNOCKBACK,
+    ENEMY_STATE_DYING,
+    ENEMY_STATE_DEAD
 }

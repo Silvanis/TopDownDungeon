@@ -15,8 +15,8 @@ public class HeroController : MonoBehaviour
     private float roomMoveTime = 1.0f;
     private Rigidbody2D rigidbody2d;
     private Vector2 currentMoveVector = new Vector2(0.0f, 0.0f);
-    public MoveDirection currentMoveDirection { get; private set; }
-    private MoveDirection previousMoveDirection;
+    public MOVEDIRECTION currentMoveDirection { get; private set; }
+    private MOVEDIRECTION previousMoveDirection;
     private PlayerInput m_playerInput;
     private Animator heroAnimationController;
 
@@ -55,8 +55,8 @@ public class HeroController : MonoBehaviour
 
     private void Awake()
     {
-        previousMoveDirection = MoveDirection.MOVE_IDLE;
-        currentMoveDirection = MoveDirection.MOVE_IDLE;
+        previousMoveDirection = MOVEDIRECTION.MOVE_IDLE;
+        currentMoveDirection = MOVEDIRECTION.MOVE_IDLE;
         DoorMovementTrigger.OnScreenTransition += OnScreenTransisiton;
     }
 
@@ -88,7 +88,7 @@ public class HeroController : MonoBehaviour
             else
             {
                 currentState = CHARACTER_STATE.NORMAL;
-                currentMoveDirection = MoveDirection.MOVE_IDLE;
+                currentMoveDirection = MOVEDIRECTION.MOVE_IDLE;
                 ResetAnimationTrigger();
                 currentMoveVector = Vector2.zero;
                 rigidbody2d.velocity = Vector2.zero; //fixes a bug where momentum from knockback was being stored
@@ -136,24 +136,24 @@ public class HeroController : MonoBehaviour
             ResetMovementTrigger();
             switch (currentMoveDirection)
             {
-                case MoveDirection.MOVE_UP:
+                case MOVEDIRECTION.MOVE_UP:
                     adjustedPosition.x = Mathf.Round(rigidbody2d.position.x * 2) / 2;
                     rigidbody2d.position = adjustedPosition;
                     break;
-                case MoveDirection.MOVE_DOWN:
+                case MOVEDIRECTION.MOVE_DOWN:
                     adjustedPosition.x = Mathf.Round(rigidbody2d.position.x * 2) / 2;
                     rigidbody2d.position = adjustedPosition;
 
                     break;
-                case MoveDirection.MOVE_LEFT:
+                case MOVEDIRECTION.MOVE_LEFT:
                     adjustedPosition.y = Mathf.Round(rigidbody2d.position.y * 2) / 2;
                     rigidbody2d.position = adjustedPosition;
                     break;
-                case MoveDirection.MOVE_RIGHT:
+                case MOVEDIRECTION.MOVE_RIGHT:
                     adjustedPosition.y = Mathf.Round(rigidbody2d.position.y * 2) / 2;
                     rigidbody2d.position = adjustedPosition;
                     break;
-                case MoveDirection.MOVE_IDLE:
+                case MOVEDIRECTION.MOVE_IDLE:
                     
                     break;
                 default:
@@ -200,26 +200,26 @@ public class HeroController : MonoBehaviour
         }
     }
 
-    void OnScreenTransisiton(MoveDirection direction) 
+    void OnScreenTransisiton(MOVEDIRECTION direction) 
     {
         ResetAnimationTrigger();
         previousMoveDirection = currentMoveDirection;
-        currentMoveDirection = MoveDirection.MOVE_IDLE;
+        currentMoveDirection = MOVEDIRECTION.MOVE_IDLE;
         currentMoveVector = Vector2.zero;
         heroAnimationController.updateMode = AnimatorUpdateMode.UnscaledTime;
         gameObject.GetComponent<Collider2D>().enabled = false;
         switch (direction)
         {
-            case MoveDirection.MOVE_UP:
+            case MOVEDIRECTION.MOVE_UP:
                 heroAnimationController.SetTrigger("MoveUp");
                 break;
-            case MoveDirection.MOVE_DOWN:
+            case MOVEDIRECTION.MOVE_DOWN:
                 heroAnimationController.SetTrigger("MoveDown");
                 break;
-            case MoveDirection.MOVE_LEFT:
+            case MOVEDIRECTION.MOVE_LEFT:
                 heroAnimationController.SetTrigger("MoveLeft");
                 break;
-            case MoveDirection.MOVE_RIGHT:
+            case MOVEDIRECTION.MOVE_RIGHT:
                 heroAnimationController.SetTrigger("MoveRight");
                 break;
             default:
@@ -229,7 +229,7 @@ public class HeroController : MonoBehaviour
         _ = StartCoroutine(MoveBetweenRooms(direction));
 
     }
-    IEnumerator MoveBetweenRooms(MoveDirection direction)
+    IEnumerator MoveBetweenRooms(MOVEDIRECTION direction)
     {
         float timeElapsed = 0f;
         Vector2 startPosition = transform.position;
@@ -237,15 +237,15 @@ public class HeroController : MonoBehaviour
         
         switch (direction)
         {
-            case MoveDirection.MOVE_UP:
+            case MOVEDIRECTION.MOVE_UP:
                 targetPosition.x = Mathf.Round(targetPosition.x); //smooth out the position in the doorway
                 targetPosition.y += 3.1f;
                 break;
-            case MoveDirection.MOVE_DOWN:
+            case MOVEDIRECTION.MOVE_DOWN:
                 targetPosition.x = Mathf.Round(targetPosition.x);
                 targetPosition.y -= 3.1f;
                 break;
-            case MoveDirection.MOVE_LEFT:
+            case MOVEDIRECTION.MOVE_LEFT:
                 targetPosition.x -= 3.1f;
                 targetPosition.y = Mathf.Round(targetPosition.y); //left and right doorways are at x.5 so need to round, determine if that's even, then add or subtract .5
                 if ((int)targetPosition.y % 2 == 0)
@@ -257,7 +257,7 @@ public class HeroController : MonoBehaviour
                     targetPosition.y -= 0.5f;
                 }
                 break;
-            case MoveDirection.MOVE_RIGHT:
+            case MOVEDIRECTION.MOVE_RIGHT:
                 targetPosition.x += 3.1f;
                 targetPosition.y = Mathf.Round(targetPosition.y);
                 if ((int)targetPosition.y % 2 == 0)
@@ -316,19 +316,19 @@ public class HeroController : MonoBehaviour
     {
         switch (currentMoveDirection)
         {
-            case MoveDirection.MOVE_UP:
+            case MOVEDIRECTION.MOVE_UP:
                 heroAnimationController.SetTrigger("MoveUp");
                 break;
-            case MoveDirection.MOVE_DOWN:
+            case MOVEDIRECTION.MOVE_DOWN:
                 heroAnimationController.SetTrigger("MoveDown");
                 break;
-            case MoveDirection.MOVE_LEFT:
+            case MOVEDIRECTION.MOVE_LEFT:
                 heroAnimationController.SetTrigger("MoveLeft");
                 break;
-            case MoveDirection.MOVE_RIGHT:
+            case MOVEDIRECTION.MOVE_RIGHT:
                 heroAnimationController.SetTrigger("MoveRight");
                 break;
-            case MoveDirection.MOVE_IDLE:
+            case MOVEDIRECTION.MOVE_IDLE:
                 heroAnimationController.SetTrigger("Idle");
                 break;
             default:
@@ -341,7 +341,7 @@ public class HeroController : MonoBehaviour
     {
         if (Mathf.Abs(currentMoveVector.x) < 0.1f && Mathf.Abs(currentMoveVector.y) < 0.1f) //not moving
         {
-            currentMoveDirection = MoveDirection.MOVE_IDLE;
+            currentMoveDirection = MOVEDIRECTION.MOVE_IDLE;
         }
         else if (Mathf.Abs(currentMoveVector.x) > Mathf.Abs(currentMoveVector.y)) //moving left or right
         {
@@ -349,11 +349,11 @@ public class HeroController : MonoBehaviour
             currentMoveVector = currentMoveVector.normalized;
             if (currentMoveVector.x > 0.0f)
             {
-                currentMoveDirection = MoveDirection.MOVE_RIGHT;
+                currentMoveDirection = MOVEDIRECTION.MOVE_RIGHT;
             }
             else
             {
-                currentMoveDirection = MoveDirection.MOVE_LEFT;
+                currentMoveDirection = MOVEDIRECTION.MOVE_LEFT;
             }
         }
         else //moving up or down
@@ -362,11 +362,11 @@ public class HeroController : MonoBehaviour
             currentMoveVector = currentMoveVector.normalized;
             if (currentMoveVector.y > 0.0f)
             {
-                currentMoveDirection = MoveDirection.MOVE_UP;
+                currentMoveDirection = MOVEDIRECTION.MOVE_UP;
             }
             else
             {
-                currentMoveDirection = MoveDirection.MOVE_DOWN;
+                currentMoveDirection = MOVEDIRECTION.MOVE_DOWN;
             }
         }
     }
@@ -428,7 +428,7 @@ public class HeroController : MonoBehaviour
     }
 }
 
-public enum MoveDirection
+public enum MOVEDIRECTION
 {
     MOVE_UP,
     MOVE_DOWN,

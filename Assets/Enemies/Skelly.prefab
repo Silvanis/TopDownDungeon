@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 468094803
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1912511815, guid: 1e8775c8e8d7e594d962a4104c155977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -185,6 +185,9 @@ MonoBehaviour:
   idleTime: 3
   knockback: 3
   damageDealt: 1
+  spawnCloud: {fileID: 2615400451930951673, guid: 908769e540c11f746935bc52ebac9554, type: 3}
+  spawnTime: 0.5
+  initialHP: 3
   knockbackFrames: 9
   remainingKnockbackFrames: 0
 --- !u!61 &3235572389798398528

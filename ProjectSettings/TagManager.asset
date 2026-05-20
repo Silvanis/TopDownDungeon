@@ -16,7 +16,7 @@ TagManager:
   - Enemy
   - BlocksEnemy
   - BlocksHero
-  - 
+  - Effects
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: Walls
     uniqueID: 2128221091
+    locked: 0
+  - name: Over Character Effects
+    uniqueID: 3187839835
     locked: 0

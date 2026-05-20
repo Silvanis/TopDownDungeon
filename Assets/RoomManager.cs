@@ -38,21 +38,21 @@ public class RoomManager : MonoBehaviour
         
     }
 
-    public void OnScreenTransition(MoveDirection direction)
+    public void OnScreenTransition(MOVEDIRECTION direction)
     {
         Vector2 newRoomPosition = new Vector2();
         switch (direction) //using map coordinates as a key, so calculating where the next room is
         {
-            case MoveDirection.MOVE_UP:
+            case MOVEDIRECTION.MOVE_UP:
                 newRoomPosition = currentRoom.roomPosition + new Vector2(0, 1);
                 break;
-            case MoveDirection.MOVE_DOWN:
+            case MOVEDIRECTION.MOVE_DOWN:
                 newRoomPosition = currentRoom.roomPosition + new Vector2(0, -1);
                 break;
-            case MoveDirection.MOVE_LEFT:
+            case MOVEDIRECTION.MOVE_LEFT:
                 newRoomPosition = currentRoom.roomPosition + new Vector2(-1, 0);
                 break;
-            case MoveDirection.MOVE_RIGHT:
+            case MOVEDIRECTION.MOVE_RIGHT:
                 newRoomPosition = currentRoom.roomPosition + new Vector2(1, 0);
                 break;
         }
@@ -64,8 +64,9 @@ public class RoomManager : MonoBehaviour
             if (!exploredRooms.Exists(match: x => x.roomCoordinates == currentCoordinates))
             {
                 CreateNewExploredRoom();
+                StartCoroutine(SpawnEnemies());
             }
-            SpawnEnemies();
+            
         }
         else
         {
@@ -85,14 +86,15 @@ public class RoomManager : MonoBehaviour
         exploredRooms.Add(newRoom);
     }
 
-    private void SpawnEnemies()
+    private IEnumerator SpawnEnemies()
     {
         RoomTracking exploredRoom = exploredRooms.Find(match: x => x.roomCoordinates == currentCoordinates);
         foreach (var enemy in currentRoom.enemies)
         {
-            
+            float randomInterval = Random.Range(0.0f, 0.5f);
             GameObject spawnedEnemy = Instantiate(enemy.enemyPrefab, enemy.enemySpawnLocation, Quaternion.identity);
             exploredRoom.activeEnemies.Add(spawnedEnemy);
+            yield return new WaitForSeconds(randomInterval);
         }
     }
 

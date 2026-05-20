@@ -26,35 +26,38 @@ public class SwordController : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
-            MoveDirection direction;
+            MOVEDIRECTION direction;
             Vector2 contactDirection = new Vector2();
             contactDirection = transform.parent.position - transform.position; //get direction by comparing the swod's position to the hero
             if (Mathf.Abs(contactDirection.x) > Mathf.Abs(contactDirection.y)) //left or right
             {
                 if (contactDirection.x > 0)
                 {
-                    direction = MoveDirection.MOVE_LEFT;
+                    direction = MOVEDIRECTION.MOVE_LEFT;
                 }
                 else
                 {
-                    direction = MoveDirection.MOVE_RIGHT;
+                    direction = MOVEDIRECTION.MOVE_RIGHT;
                 }
             }
             else //up or down
             {
                 if (contactDirection.y > 0) 
                 {
-                    direction = MoveDirection.MOVE_DOWN;
+                    direction = MOVEDIRECTION.MOVE_DOWN;
                 }
                 else
                 {
-                    direction = MoveDirection.MOVE_UP;
+                    direction = MOVEDIRECTION.MOVE_UP;
                 }
                     
             }
-            
+            HitPacket hit = new HitPacket();
+            hit.type = WEAPON_TYPE.TYPE_SWORD;
+            hit.knockbackDirection = direction;
+            hit.damageAmount = DamageTableManager._instance.damageTable.woodenSword;
             Debug.Log("Hit " + collision.gameObject.name + " in this direction: " + direction);
-            collision.gameObject.GetComponent<SkellyEnemy>().GetHit(direction);
+            collision.gameObject.GetComponent<SkellyEnemy>().GetHit(hit);
         }
 
     }

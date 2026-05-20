@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DoorMovementTrigger : MonoBehaviour
 {
-    public static event Action<MoveDirection> OnScreenTransition;
+    public static event Action<MOVEDIRECTION> OnScreenTransition;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class DoorMovementTrigger : MonoBehaviour
         {
             if (collision.gameObject.tag == "Player") 
             {
-                MoveDirection playerDirection = collision.gameObject.GetComponent<HeroController>().currentMoveDirection;
+                MOVEDIRECTION playerDirection = collision.gameObject.GetComponent<HeroController>().currentMoveDirection;
                 
                 OnScreenTransition?.Invoke(playerDirection);
             }
