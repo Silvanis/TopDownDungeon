@@ -60,10 +60,6 @@ public class SkellyEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentState == ENEMY_STATE.ENEMY_STATE_DYING)
-        {
-            Destroy(gameObject);
-        }
         rigidbody2d.velocity = Vector2.zero;
     }
 
@@ -106,6 +102,16 @@ public class SkellyEnemy : MonoBehaviour
         else if (currentState == ENEMY_STATE.ENEMY_STATE_IDLE) 
         { 
             return; 
+        }
+
+        else if (currentState == ENEMY_STATE.ENEMY_STATE_DYING)
+        {
+            return;
+        }
+
+        else if (currentState == ENEMY_STATE.ENEMY_STATE_DEAD)
+        {
+            Destroy(gameObject);
         }
 
 
@@ -250,6 +256,8 @@ public class SkellyEnemy : MonoBehaviour
         if (currentHP <= 0)
         {
             currentState = ENEMY_STATE.ENEMY_STATE_DYING;
+            animator.SetTrigger("Dying");
+            rigidbody2d.simulated = false;
             return;
         }
         currentState = ENEMY_STATE.ENEMY_STATE_KNOCKBACK;
@@ -281,6 +289,11 @@ public class SkellyEnemy : MonoBehaviour
         yield return new WaitForSeconds(spawnTime);
         spriteRenderer.enabled = true;
         ChangePosition();
+    }
+
+    public void DyingAnimationEnded()
+    {
+        currentState = ENEMY_STATE.ENEMY_STATE_DEAD;
     }
 }
 
