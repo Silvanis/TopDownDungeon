@@ -14,7 +14,7 @@ public class RoomDataSO : ScriptableObject
 
 }
 [Serializable]
-public class Room
+public struct Room
 {
     [SerializeField]
     public Vector2 roomPosition; //relative to map/chunk
@@ -30,7 +30,7 @@ public class Room
     public List<Stairs> stairs;
 }
 [Serializable]
-public class Door
+public struct Door
 {
     [SerializeField]
     public Vector2 doorLocation; //global space to grab/change door sprite
@@ -45,7 +45,7 @@ public enum DOOR_TYPE
     LOCKED
 }
 [Serializable]
-public class Enemy
+public struct Enemy
 {
     [SerializeField]
     public GameObject enemyPrefab;
@@ -55,7 +55,7 @@ public class Enemy
     public GameObject enemyCarriedItem;
 }
 [Serializable]
-public class Item
+public struct Item
 {
     [SerializeField]
     public GameObject itemPrefab;
@@ -73,7 +73,7 @@ public enum ITEM_SPAWN_CONDITION
 }
 
 [Serializable]
-public class Stairs
+public struct Stairs
 {
     [SerializeField]
     public Vector2 stairEntrance; //global space

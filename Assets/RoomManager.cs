@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 
 public class RoomManager : MonoBehaviour
@@ -10,13 +11,25 @@ public class RoomManager : MonoBehaviour
     private List<RoomTracking> exploredRooms = new();
     private int currentActiveRoom;
     private Vector2 currentCoordinates;
+    public static RoomManager _instance;
+    void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            _instance = this;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
         DoorMovementTrigger.OnScreenTransition += OnScreenTransition;
 
         currentRoom = roomData.rooms[16];
-        List<GameObject> newEnemies = new();
+        List<Enemy> newEnemies = new();
         RoomTracking newRoom = new()
         {
             roomCoordinates = currentRoom.roomPosition,
@@ -66,7 +79,7 @@ public class RoomManager : MonoBehaviour
                 CreateNewExploredRoom();
                 StartCoroutine(SpawnEnemies());
             }
-            
+            currentActiveRoom = exploredRooms.FindIndex(match: x => x.roomCoordinates == currentCoordinates);
         }
         else
         {
@@ -81,7 +94,7 @@ public class RoomManager : MonoBehaviour
         {
             roomCoordinates = currentCoordinates,
             isRoomActive = true,
-            activeEnemies = new List<GameObject>()
+            activeEnemies = new List<Enemy>()
         };
         exploredRooms.Add(newRoom);
     }
@@ -91,18 +104,37 @@ public class RoomManager : MonoBehaviour
         RoomTracking exploredRoom = exploredRooms.Find(match: x => x.roomCoordinates == currentCoordinates);
         foreach (var enemy in currentRoom.enemies)
         {
+            
             float randomInterval = Random.Range(0.0f, 0.5f);
-            GameObject spawnedEnemy = Instantiate(enemy.enemyPrefab, enemy.enemySpawnLocation, Quaternion.identity);
+            GameObject enemyObject = Instantiate(enemy.enemyPrefab, enemy.enemySpawnLocation, Quaternion.identity);
+            Enemy spawnedEnemy = new Enemy() { enemyPrefab = enemyObject, enemySpawnLocation = enemy.enemySpawnLocation, enemyCarriedItem = enemy.enemyCarriedItem };
             exploredRoom.activeEnemies.Add(spawnedEnemy);
             yield return new WaitForSeconds(randomInterval);
         }
+    }
+
+    public void OnEnemyDeath(GameObject enemy)
+    {
+        Transform location = enemy.transform;
+        int enemyIndex = exploredRooms[currentActiveRoom].activeEnemies.FindIndex(match: x => x.enemyPrefab == enemy);
+        GameObject item = exploredRooms[currentActiveRoom].activeEnemies[enemyIndex].enemyCarriedItem;
+        if ( item != null)
+        {
+            Instantiate(item, location.position, Quaternion.identity);
+        }
+        else
+        {
+            //roll for random item drop
+        }
+        exploredRooms[currentActiveRoom].activeEnemies.RemoveAt(enemyIndex);
+
     }
 
     struct RoomTracking
     {
         public Vector2 roomCoordinates;
         public bool isRoomActive;
-        public List<GameObject> activeEnemies;
+        public List<Enemy> activeEnemies;
 
     }
 }

@@ -19,7 +19,9 @@ public class HeroController : MonoBehaviour
     private MOVEDIRECTION previousMoveDirection;
     private PlayerInput m_playerInput;
     private Animator heroAnimationController;
-
+    [SerializeField]
+    private AudioClip swordAttackSound;
+    private AudioSource sounds;
 
     //---State---
     private bool isPaused = false;
@@ -51,6 +53,7 @@ public class HeroController : MonoBehaviour
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
         heroAnimationController = gameObject.GetComponentInChildren<Animator>();
         m_playerInput = GetComponent<PlayerInput>();
+        sounds = gameObject.GetComponent<AudioSource>();
     }
 
     private void Awake()
@@ -196,6 +199,7 @@ public class HeroController : MonoBehaviour
                 ResetAnimationTrigger();
                 currentState = CHARACTER_STATE.ATTACKING;
                 heroAnimationController.SetTrigger("Attack");
+                sounds.PlayOneShot(swordAttackSound, 0.45f);
             }
         }
     }

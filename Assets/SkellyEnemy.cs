@@ -29,6 +29,12 @@ public class SkellyEnemy : MonoBehaviour
     private float distanceTravelled = 0.0f;
     private ENEMY_STATE currentState;
     private SpriteRenderer spriteRenderer;
+    [SerializeField]
+    private AudioClip enemyHitSound;
+    [SerializeField]
+    private AudioClip enemyDyingSound;
+    private AudioSource sounds;
+    private float soundVolume = 0.45f;
 
     //---Knockback---
     [SerializeField]
@@ -45,6 +51,7 @@ public class SkellyEnemy : MonoBehaviour
         animator = gameObject.GetComponentInChildren<Animator>();
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
         spriteRenderer = gameObject.GetComponentInChildren<SpriteRenderer>();
+        sounds = gameObject.GetComponent <AudioSource>();
         currentState = ENEMY_STATE.ENEMY_STATE_SPAWNING;
         spriteRenderer.enabled = false;
         currentHP = initialHP;
@@ -227,9 +234,11 @@ public class SkellyEnemy : MonoBehaviour
     {
         currentState = ENEMY_STATE.ENEMY_STATE_IDLE;
         yield return new WaitForSeconds(idleTime);
-        distanceTravelled = 0;
-        ChangePosition();
-
+        if (currentState == ENEMY_STATE.ENEMY_STATE_IDLE) //make sure we're still idle
+        {
+            distanceTravelled = 0;
+            ChangePosition();
+        }
     }
 
     private void CheckForReachedPosition()
@@ -258,6 +267,8 @@ public class SkellyEnemy : MonoBehaviour
             currentState = ENEMY_STATE.ENEMY_STATE_DYING;
             animator.SetTrigger("Dying");
             rigidbody2d.simulated = false;
+            sounds.PlayOneShot(enemyDyingSound, soundVolume);
+            RoomManager._instance.OnEnemyDeath(gameObject);
             return;
         }
         currentState = ENEMY_STATE.ENEMY_STATE_KNOCKBACK;
@@ -280,6 +291,7 @@ public class SkellyEnemy : MonoBehaviour
                 knockbackDirection = Vector2.right;
                 break;
         }
+        sounds.PlayOneShot(enemyHitSound, soundVolume);
     }
 
     private IEnumerator SpawnEffects()

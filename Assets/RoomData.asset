@@ -147,7 +147,7 @@ MonoBehaviour:
       enemyCarriedItem: {fileID: 0}
     - enemyPrefab: {fileID: 7150162656278984390, guid: 295617fdaa8294d4892384d9eb8f1d17, type: 3}
       enemySpawnLocation: {x: 12.5, y: 2.5}
-      enemyCarriedItem: {fileID: 0}
+      enemyCarriedItem: {fileID: 1887921863509852159, guid: 887c229b720294940b2387c8d009e645, type: 3}
     - enemyPrefab: {fileID: 7150162656278984390, guid: 295617fdaa8294d4892384d9eb8f1d17, type: 3}
       enemySpawnLocation: {x: 13.5, y: -1.5}
       enemyCarriedItem: {fileID: 0}
